@@ -1,0 +1,232 @@
+/* ─── Design Tokens ─────────────────────────────────────────────────────────── */
+:root {
+  --bg:         #0a0e1a;
+  --surface:    #111827;
+  --surface2:   #1a2235;
+  --border:     #1e2d45;
+  --gold:       #f59e0b;
+  --silver:     #94a3b8;
+  --bronze:     #cd7c40;
+  --teal:       #06b6d4;
+  --teal-dark:  #0891b2;
+  --text:       #e2e8f0;
+  --text-muted: #64748b;
+  --green:      #10b981;
+  --red:        #ef4444;
+  --amber:      #f59e0b;
+  --blue:       #3b82f6;
+}
+
+/* ─── Reset ─────────────────────────────────────────────────────────────────── */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+/* ─── Header ─────────────────────────────────────────────────────────────────── */
+.header {
+  background: linear-gradient(135deg, #0c1a2e 0%, #0a1628 50%, #061020 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.logo { display: flex; align-items: center; gap: 12px; }
+.logo-icon {
+  width: 40px; height: 40px;
+  background: linear-gradient(135deg, var(--teal), #0284c7);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+}
+.logo-text h1 {
+  font-size: 1.5rem; font-weight: 700;
+  background: linear-gradient(90deg, var(--teal), #38bdf8);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.logo-text p { font-size: 0.75rem; color: var(--text-muted); letter-spacing: 0.05em; text-transform: uppercase; }
+.comp-select {
+  background: var(--surface2); border: 1px solid var(--border);
+  color: var(--text); padding: 8px 14px; border-radius: 8px;
+  font-size: 0.875rem; cursor: pointer; outline: none;
+}
+.comp-select:focus { border-color: var(--teal); }
+
+/* ─── Controls ───────────────────────────────────────────────────────────────── */
+.controls {
+  padding: 16px 24px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
+}
+.gender-toggle {
+  display: flex; background: var(--surface2);
+  border-radius: 8px; overflow: hidden; border: 1px solid var(--border);
+}
+.gender-btn {
+  padding: 7px 20px; font-size: 0.875rem; font-weight: 600;
+  cursor: pointer; border: none; background: transparent; color: var(--text-muted); transition: all 0.2s;
+}
+.gender-btn.active { background: var(--teal); color: #fff; }
+.category-tabs { display: flex; flex-wrap: wrap; gap: 6px; }
+.cat-tab {
+  padding: 6px 14px; border-radius: 6px; border: 1px solid var(--border);
+  background: transparent; color: var(--text-muted); font-size: 0.8rem;
+  cursor: pointer; transition: all 0.2s; font-weight: 500;
+}
+.cat-tab.active { border-color: var(--teal); color: var(--teal); background: rgba(6,182,212,0.1); }
+.dist-btns { display: flex; flex-wrap: wrap; gap: 6px; margin-left: auto; }
+.dist-btn {
+  padding: 6px 12px; border-radius: 6px; border: 1px solid var(--border);
+  background: var(--surface2); color: var(--text-muted); font-size: 0.8rem;
+  cursor: pointer; transition: all 0.2s; font-weight: 600;
+}
+.dist-btn.active {
+  background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+  border-color: transparent; color: #fff;
+}
+
+/* ─── Main Layout ────────────────────────────────────────────────────────────── */
+.main { padding: 20px 24px; display: grid; gap: 20px; max-width: 1400px; margin: 0 auto; }
+
+/* ─── Section Titles ─────────────────────────────────────────────────────────── */
+.section-title {
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--teal); margin-bottom: 14px;
+  display: flex; align-items: center; gap: 8px;
+}
+.section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+/* ─── Leaderboard ────────────────────────────────────────────────────────────── */
+.leaderboard-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden;
+}
+.leaderboard-header {
+  padding: 16px 20px; display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+}
+.event-title { font-size: 1.1rem; font-weight: 700; }
+.event-subtitle { font-size: 0.75rem; color: var(--text-muted); margin-top: 2px; }
+.regen-btn {
+  background: linear-gradient(135deg, #1e3a5f, #0f2d4a);
+  border: 1px solid var(--teal); color: var(--teal);
+  padding: 8px 16px; border-radius: 8px; cursor: pointer;
+  font-size: 0.8rem; font-weight: 600; transition: all 0.2s;
+  display: flex; align-items: center; gap: 6px;
+}
+.regen-btn:hover { background: rgba(6,182,212,0.15); }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+thead th {
+  background: var(--surface2); padding: 10px 14px; text-align: left;
+  font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.06em; color: var(--text-muted); border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+tbody tr { border-bottom: 1px solid var(--border); transition: background 0.15s; }
+tbody tr:last-child { border-bottom: none; }
+tbody tr:hover { background: rgba(255,255,255,0.03); }
+tbody td { padding: 12px 14px; vertical-align: middle; white-space: nowrap; }
+.pos-cell { font-weight: 800; font-size: 1.1rem; text-align: center; width: 48px; }
+.pos-1 { color: var(--gold); }
+.pos-2 { color: var(--silver); }
+.pos-3 { color: var(--bronze); }
+.pos-other { color: var(--text-muted); }
+.athlete-name { font-weight: 600; font-size: 0.9rem; }
+.athlete-country { font-size: 0.72rem; color: var(--text-muted); margin-top: 1px; }
+.pred-time { font-weight: 700; font-family: 'Courier New', monospace; font-size: 1rem; color: var(--teal); }
+.prob-cell { min-width: 140px; }
+.prob-bar-wrap { display: flex; align-items: center; gap: 8px; }
+.prob-bar-bg { flex: 1; height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+.prob-bar-fill { height: 100%; border-radius: 3px; transition: width 0.5s ease; }
+.prob-bar-gold   { background: linear-gradient(90deg, var(--gold),  #fbbf24); }
+.prob-bar-green  { background: linear-gradient(90deg, var(--green), #34d399); }
+.prob-bar-blue   { background: linear-gradient(90deg, var(--blue),  #60a5fa); }
+.prob-bar-grey   { background: var(--text-muted); }
+.prob-pct { font-size: 0.75rem; font-weight: 700; width: 34px; text-align: right; }
+.trend-up   { color: var(--green); font-size: 1rem; }
+.trend-down { color: var(--red);   font-size: 1rem; }
+.trend-flat { color: var(--text-muted); font-size: 1rem; }
+.time-mono  { font-family: 'Courier New', monospace; font-size: 0.85rem; }
+.age-cell   { color: var(--text-muted); font-size: 0.8rem; }
+.wr-badge {
+  display: inline-block; background: linear-gradient(135deg, var(--gold), #d97706);
+  color: #000; font-size: 0.6rem; font-weight: 800; padding: 2px 5px;
+  border-radius: 4px; margin-left: 4px; vertical-align: middle;
+}
+
+/* ─── Historical Form ────────────────────────────────────────────────────────── */
+.form-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+.form-charts { display: grid; grid-template-columns: repeat(auto-fill, minmax(175px, 1fr)); gap: 16px; margin-top: 4px; }
+.form-athlete { background: var(--surface2); border-radius: 10px; padding: 14px; border: 1px solid var(--border); }
+.form-athlete-name { font-size: 0.8rem; font-weight: 700; margin-bottom: 2px; }
+.form-athlete-country { font-size: 0.65rem; color: var(--text-muted); margin-bottom: 10px; }
+.form-bars { display: flex; align-items: flex-end; gap: 5px; height: 60px; }
+.form-year-col { display: flex; flex-direction: column; align-items: center; gap: 4px; flex: 1; }
+.form-bar { width: 100%; border-radius: 3px 3px 0 0; transition: height 0.4s ease; }
+.form-year-label { font-size: 0.58rem; color: var(--text-muted); }
+.form-time-label { font-size: 0.58rem; font-family: monospace; color: var(--text-muted); margin-top: 4px; }
+
+/* ─── Head to Head ───────────────────────────────────────────────────────────── */
+.h2h-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+.h2h-selectors { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
+.h2h-select {
+  flex: 1; min-width: 160px; background: var(--surface2); border: 1px solid var(--border);
+  color: var(--text); padding: 9px 12px; border-radius: 8px; font-size: 0.875rem; outline: none; cursor: pointer;
+}
+.h2h-select:focus { border-color: var(--teal); }
+.vs-badge {
+  background: linear-gradient(135deg, var(--teal-dark), #0284c7);
+  color: white; padding: 6px 12px; border-radius: 20px;
+  font-size: 0.75rem; font-weight: 800; letter-spacing: 0.05em;
+}
+.h2h-comparison { display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: start; }
+.h2h-athlete { background: var(--surface2); border-radius: 10px; padding: 16px; border: 1px solid var(--border); }
+.h2h-athlete.winner { border-color: var(--teal); background: rgba(6,182,212,0.05); }
+.h2h-name { font-size: 1rem; font-weight: 700; }
+.h2h-country { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 12px; }
+.h2h-stats { display: flex; flex-direction: column; gap: 8px; }
+.h2h-stat { display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; }
+.h2h-stat-label { color: var(--text-muted); }
+.h2h-stat-val { font-weight: 700; font-family: monospace; }
+.h2h-stat-val.win { color: var(--green); }
+.h2h-mid { display: flex; flex-direction: column; align-items: center; gap: 8px; padding-top: 40px; }
+.h2h-prob-bar { width: 10px; height: 160px; background: var(--border); border-radius: 5px; overflow: hidden; position: relative; }
+.h2h-prob-fill { position: absolute; bottom: 0; width: 100%; border-radius: 5px; background: linear-gradient(180deg, var(--teal), var(--teal-dark)); transition: height 0.5s ease; }
+.h2h-label { font-size: 0.65rem; color: var(--text-muted); writing-mode: vertical-rl; text-orientation: mixed; }
+.favored-badge {
+  background: linear-gradient(135deg, var(--gold), #d97706);
+  color: #000; font-size: 0.65rem; font-weight: 800; padding: 3px 8px; border-radius: 10px; text-transform: uppercase;
+}
+.no-data { color: var(--text-muted); font-size: 0.85rem; text-align: center; padding: 20px; }
+
+/* ─── Footer ─────────────────────────────────────────────────────────────────── */
+.footer {
+  text-align: center; padding: 20px; color: var(--text-muted);
+  font-size: 0.72rem; border-top: 1px solid var(--border); margin-top: 10px;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────────── */
+@media (max-width: 700px) {
+  .header { flex-direction: column; align-items: flex-start; }
+  .controls { flex-direction: column; align-items: flex-start; }
+  .dist-btns { margin-left: 0; }
+  .h2h-comparison { grid-template-columns: 1fr; }
+  .h2h-mid { flex-direction: row; padding-top: 0; }
+  .h2h-prob-bar { width: 160px; height: 10px; }
+  .h2h-prob-fill { top: 0; bottom: auto; height: 100%; width: 50%; right: 0; left: auto; }
+  .main { padding: 14px; }
+}
+
+/* ─── Animations ─────────────────────────────────────────────────────────────── */
+.animate-in { animation: fadeSlide 0.35s ease forwards; }
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

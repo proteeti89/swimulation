@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swimulation — International Swimming Predictor</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">
+    <div class="logo-icon">🌊</div>
+    <div class="logo-text">
+      <h1>Swimulation</h1>
+      <p>International Swimming Results Predictor</p>
+    </div>
+  </div>
+  <select class="comp-select" id="compSelect">
+    <option value="World Aquatics Championships">🌍 World Aquatics Championships</option>
+    <option value="Olympic Games">🥇 Olympic Games</option>
+    <option value="Pan Pacific Championships">🏊 Pan Pacific Championships</option>
+    <option value="European Aquatics Championships">🇪🇺 European Aquatics Championships</option>
+    <option value="Commonwealth Games">🏴 Commonwealth Games</option>
+  </select>
+</div>
+
+<div class="controls">
+  <div class="gender-toggle">
+    <button class="gender-btn active" onclick="setGender('M')">Men</button>
+    <button class="gender-btn" onclick="setGender('W')">Women</button>
+  </div>
+  <div class="category-tabs" id="catTabs">
+    <button class="cat-tab active" onclick="setCat('Freestyle')">Freestyle</button>
+    <button class="cat-tab" onclick="setCat('Backstroke')">Backstroke</button>
+    <button class="cat-tab" onclick="setCat('Breaststroke')">Breaststroke</button>
+    <button class="cat-tab" onclick="setCat('Butterfly')">Butterfly</button>
+    <button class="cat-tab" onclick="setCat('IM')">Ind. Medley</button>
+  </div>
+  <div class="dist-btns" id="distBtns"></div>
+</div>
+
+<div class="main">
+  <div class="leaderboard-card animate-in" id="leaderboardCard">
+    <div class="leaderboard-header">
+      <div>
+        <div class="event-title" id="eventTitle">Men's 100m Freestyle</div>
+        <div class="event-subtitle" id="eventSubtitle">World Aquatics Championships — Predicted Results</div>
+      </div>
+      <button class="regen-btn" onclick="regenerate()">🔄 Regenerate</button>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Pos</th>
+            <th>Athlete</th>
+            <th>Pred. Time</th>
+            <th>Medal Prob.</th>
+            <th>PB</th>
+            <th>SB '25</th>
+            <th>Age</th>
+            <th>Trend</th>
+          </tr>
+        </thead>
+        <tbody id="leaderboardBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="form-card animate-in">
+    <div class="section-title">Historical Form — Top 5 Athletes (2022–2025)</div>
+    <div class="form-charts" id="formCharts"></div>
+  </div>
+
+  <div class="h2h-card animate-in">
+    <div class="section-title">Head-to-Head Comparison</div>
+    <div class="h2h-selectors">
+      <select class="h2h-select" id="h2h1" onchange="renderH2H()"></select>
+      <span class="vs-badge">VS</span>
+      <select class="h2h-select" id="h2h2" onchange="renderH2H()"></select>
+    </div>
+    <div id="h2hPanel"></div>
+  </div>
+</div>
+
+<div class="footer">
+  Swimulation uses a weighted scoring model (65% season best / 35% PB + consistency &amp; trend adjustments) with Monte Carlo simulation (300 runs).<br>
+  Data sourced from World Aquatics, USA Swimming, TYR Pro Swim Series results through 2025. For analytical and entertainment purposes only.
+</div>
+
+<script src="js/data/events.js"></script>
+<script src="js/data/athletes.js"></script>
+<script src="js/simulation.js"></script>
+<script src="js/render.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
