@@ -1,0 +1,4497 @@
+{
+  "meta": {
+    "version": "2.0",
+    "lastUpdated": "2026-03-29",
+    "source": "World Aquatics / USA Swimming / TYR Pro Swim Series",
+    "notes": "Times in seconds. sb = 2025 season best. hist = season bests by year."
+  },
+  "events": {
+    "M-Free-50": [
+      {
+        "name": "Ben Proud",
+        "flag": "🇬🇧",
+        "country": "GBR",
+        "age": 31,
+        "pb": 21.13,
+        "sb": 21.2,
+        "hist": {
+          "2022": 21.35,
+          "2023": 21.28,
+          "2024": 21.22,
+          "2025": 21.2
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1994
+      },
+      {
+        "name": "Caeleb Dressel",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 28,
+        "pb": 20.91,
+        "sb": 21.18,
+        "hist": {
+          "2022": 21.4,
+          "2023": 21.22,
+          "2024": 21.15,
+          "2025": 21.18
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.972,
+        "h2h": {},
+        "birthYear": 1997
+      },
+      {
+        "name": "Florent Manaudou",
+        "flag": "🇫🇷",
+        "country": "FRA",
+        "age": 35,
+        "pb": 21.19,
+        "sb": 21.28,
+        "hist": {
+          "2022": 21.52,
+          "2023": 21.42,
+          "2024": 21.3,
+          "2025": 21.28
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.005,
+        "h2h": {},
+        "birthYear": 1990
+      },
+      {
+        "name": "Kyle Chalmers",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 27,
+        "pb": 21.35,
+        "sb": 21.35,
+        "hist": {
+          "2022": 21.55,
+          "2023": 21.44,
+          "2024": 21.38,
+          "2025": 21.35
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1998
+      },
+      {
+        "name": "Maxime Grousset",
+        "flag": "🇫🇷",
+        "country": "FRA",
+        "age": 25,
+        "pb": 21.3,
+        "sb": 21.3,
+        "hist": {
+          "2022": 21.7,
+          "2023": 21.48,
+          "2024": 21.38,
+          "2025": 21.3
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2000
+      },
+      {
+        "name": "Noe Ponti",
+        "flag": "🇨🇭",
+        "country": "SUI",
+        "age": 23,
+        "pb": 21.4,
+        "sb": 21.4,
+        "hist": {
+          "2022": 21.8,
+          "2023": 21.58,
+          "2024": 21.48,
+          "2025": 21.4
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Bruno Fratus",
+        "flag": "🇧🇷",
+        "country": "BRA",
+        "age": 36,
+        "pb": 21.21,
+        "sb": 21.48,
+        "hist": {
+          "2022": 21.39,
+          "2023": 21.48,
+          "2024": 21.45,
+          "2025": 21.48
+        },
+        "note": null,
+        "active": false,
+        "retired": 2025,
+        "champsMult": 1.008,
+        "h2h": {},
+        "birthYear": 1989
+      },
+      {
+        "name": "Shaine Casas",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 24,
+        "pb": 21.5,
+        "sb": 21.5,
+        "hist": {
+          "2022": 21.8,
+          "2023": 21.65,
+          "2024": 21.55,
+          "2025": 21.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2001
+      }
+    ],
+    "M-Free-100": [
+      {
+        "name": "David Popovici",
+        "flag": "🇷🇴",
+        "country": "ROU",
+        "age": 20,
+        "pb": 46.51,
+        "sb": 46.51,
+        "hist": {
+          "2022": 47.58,
+          "2023": 46.86,
+          "2024": 47.2,
+          "2025": 46.51
+        },
+        "note": "2025 World Champion",
+        "active": true,
+        "retired": null,
+        "champsMult": 0.975,
+        "h2h": {
+          "Pan Zhanle": {
+            "wins": 6,
+            "losses": 3
+          },
+          "Caeleb Dressel": {
+            "wins": 5,
+            "losses": 3
+          }
+        },
+        "birthYear": 2005
+      },
+      {
+        "name": "Pan Zhanle",
+        "flag": "🇨🇳",
+        "country": "CHN",
+        "age": 20,
+        "pb": 46.4,
+        "sb": 47.81,
+        "hist": {
+          "2022": 47.82,
+          "2023": 47.12,
+          "2024": 46.8,
+          "2025": 47.81
+        },
+        "note": "WR 46.40 (2024 Olympics)",
+        "active": true,
+        "retired": null,
+        "champsMult": 0.975,
+        "h2h": {},
+        "birthYear": 2005
+      },
+      {
+        "name": "Kyle Chalmers",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 27,
+        "pb": 47.08,
+        "sb": 47.2,
+        "hist": {
+          "2022": 47.55,
+          "2023": 47.4,
+          "2024": 47.35,
+          "2025": 47.2
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1998
+      },
+      {
+        "name": "Caeleb Dressel",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 28,
+        "pb": 46.96,
+        "sb": 47.25,
+        "hist": {
+          "2022": 47.5,
+          "2023": 47.2,
+          "2024": 47.3,
+          "2025": 47.25
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.972,
+        "h2h": {},
+        "birthYear": 1997
+      },
+      {
+        "name": "Shaine Casas",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 24,
+        "pb": 47.3,
+        "sb": 47.3,
+        "hist": {
+          "2022": 48.2,
+          "2023": 47.8,
+          "2024": 47.5,
+          "2025": 47.3
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2001
+      },
+      {
+        "name": "Maxime Grousset",
+        "flag": "🇫🇷",
+        "country": "FRA",
+        "age": 25,
+        "pb": 47.23,
+        "sb": 47.45,
+        "hist": {
+          "2022": 47.85,
+          "2023": 47.55,
+          "2024": 47.48,
+          "2025": 47.45
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2000
+      },
+      {
+        "name": "Noe Ponti",
+        "flag": "🇨🇭",
+        "country": "SUI",
+        "age": 23,
+        "pb": 47.42,
+        "sb": 47.5,
+        "hist": {
+          "2022": 48.1,
+          "2023": 47.85,
+          "2024": 47.72,
+          "2025": 47.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Duncan Scott",
+        "flag": "🇬🇧",
+        "country": "GBR",
+        "age": 28,
+        "pb": 47.63,
+        "sb": 47.7,
+        "hist": {
+          "2022": 47.95,
+          "2023": 47.88,
+          "2024": 47.8,
+          "2025": 47.7
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1997
+      },
+      {
+        "name": "Kristof Milak",
+        "flag": "🇭🇺",
+        "country": "HUN",
+        "age": 25,
+        "pb": 47.17,
+        "sb": 47.55,
+        "hist": {
+          "2022": 47.62,
+          "2023": 47.5,
+          "2024": 47.42,
+          "2025": 47.55
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.973,
+        "h2h": {},
+        "birthYear": 2000
+      },
+      {
+        "name": "Nyls Korstanje",
+        "flag": "🇳🇱",
+        "country": "NED",
+        "age": 26,
+        "pb": 47.44,
+        "sb": 47.62,
+        "hist": {
+          "2022": 47.9,
+          "2023": 47.7,
+          "2024": 47.6,
+          "2025": 47.62
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1999
+      }
+    ],
+    "M-Free-200": [
+      {
+        "name": "David Popovici",
+        "flag": "🇷🇴",
+        "country": "ROU",
+        "age": 20,
+        "pb": 103.21000000000001,
+        "sb": 103.53,
+        "hist": {
+          "2022": 106.2,
+          "2023": 104.68,
+          "2024": 104.2,
+          "2025": 103.53
+        },
+        "note": "2025 World Champion",
+        "active": true,
+        "retired": null,
+        "champsMult": 0.975,
+        "h2h": {
+          "Pan Zhanle": {
+            "wins": 6,
+            "losses": 3
+          },
+          "Caeleb Dressel": {
+            "wins": 5,
+            "losses": 3
+          }
+        },
+        "birthYear": 2005
+      },
+      {
+        "name": "Luke Hobson",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 22,
+        "pb": 103.89,
+        "sb": 104,
+        "hist": {
+          "2022": 106,
+          "2023": 104.8,
+          "2024": 104.2,
+          "2025": 104
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2003
+      },
+      {
+        "name": "Milak Kristof",
+        "flag": "🇭🇺",
+        "country": "HUN",
+        "age": 25,
+        "pb": 102.97,
+        "sb": 104.2,
+        "hist": {
+          "2022": 104.5,
+          "2023": 103.95,
+          "2024": 103.8,
+          "2025": 104.2
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2000
+      },
+      {
+        "name": "Duncan Scott",
+        "flag": "🇬🇧",
+        "country": "GBR",
+        "age": 28,
+        "pb": 104.22,
+        "sb": 104.6,
+        "hist": {
+          "2022": 105.1,
+          "2023": 104.9,
+          "2024": 104.8,
+          "2025": 104.6
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1997
+      },
+      {
+        "name": "Lukas Martens",
+        "flag": "🇩🇪",
+        "country": "GER",
+        "age": 23,
+        "pb": 104.4,
+        "sb": 104.8,
+        "hist": {
+          "2022": 105.5,
+          "2023": 105,
+          "2024": 104.95,
+          "2025": 104.8
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Matthew Richards",
+        "flag": "🇬🇧",
+        "country": "GBR",
+        "age": 23,
+        "pb": 104.75,
+        "sb": 105,
+        "hist": {
+          "2022": 105.7,
+          "2023": 105.4,
+          "2024": 105.2,
+          "2025": 105
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Pan Zhanle",
+        "flag": "🇨🇳",
+        "country": "CHN",
+        "age": 20,
+        "pb": 105,
+        "sb": 105.4,
+        "hist": {
+          "2022": 106.2,
+          "2023": 105.7,
+          "2024": 105.5,
+          "2025": 105.4
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.975,
+        "h2h": {},
+        "birthYear": 2005
+      },
+      {
+        "name": "Hwang Sunwoo",
+        "flag": "🇰🇷",
+        "country": "KOR",
+        "age": 23,
+        "pb": 104.95,
+        "sb": 105.5,
+        "hist": {
+          "2022": 106.3,
+          "2023": 106.2,
+          "2024": 106.1,
+          "2025": 105.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2002
+      }
+    ],
+    "M-Free-400": [
+      {
+        "name": "Leon Marchand",
+        "flag": "🇫🇷",
+        "country": "FRA",
+        "age": 23,
+        "pb": 221.68,
+        "sb": 222.5,
+        "hist": {
+          "2022": 223.5,
+          "2023": 222,
+          "2024": 222.2,
+          "2025": 222.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.965,
+        "h2h": {
+          "Daiya Seto": {
+            "wins": 8,
+            "losses": 1
+          },
+          "Wang Shun": {
+            "wins": 10,
+            "losses": 0
+          }
+        },
+        "birthYear": 2002
+      },
+      {
+        "name": "Ahmed Jaouadi",
+        "flag": "🇹🇳",
+        "country": "TUN",
+        "age": 23,
+        "pb": 222.1,
+        "sb": 223,
+        "hist": {
+          "2022": 227,
+          "2023": 225,
+          "2024": 223.8,
+          "2025": 223
+        },
+        "note": "2025 Worlds 800m Gold",
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Sam Short",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 22,
+        "pb": 222.36,
+        "sb": 223.5,
+        "hist": {
+          "2022": 225.6,
+          "2023": 224.5,
+          "2024": 224.2,
+          "2025": 223.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2003
+      },
+      {
+        "name": "Lukas Martens",
+        "flag": "🇩🇪",
+        "country": "GER",
+        "age": 23,
+        "pb": 221.78,
+        "sb": 223.6,
+        "hist": {
+          "2022": 225.1,
+          "2023": 224,
+          "2024": 223.8,
+          "2025": 223.6
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Elijah Winnington",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 25,
+        "pb": 223.34,
+        "sb": 224.2,
+        "hist": {
+          "2022": 225.5,
+          "2023": 225.2,
+          "2024": 225,
+          "2025": 224.2
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2000
+      },
+      {
+        "name": "Guilherme Costa",
+        "flag": "🇧🇷",
+        "country": "BRA",
+        "age": 27,
+        "pb": 223.07999999999998,
+        "sb": 224.8,
+        "hist": {
+          "2022": 225.3,
+          "2023": 225,
+          "2024": 224.8,
+          "2025": 224.8
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1998
+      },
+      {
+        "name": "Felix Auboeck",
+        "flag": "🇦🇹",
+        "country": "AUT",
+        "age": 28,
+        "pb": 223.36,
+        "sb": 225,
+        "hist": {
+          "2022": 226,
+          "2023": 225.7,
+          "2024": 225.6,
+          "2025": 225
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1997
+      },
+      {
+        "name": "Jake Mitchell",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 24,
+        "pb": 224,
+        "sb": 225.2,
+        "hist": {
+          "2022": 226.5,
+          "2023": 225.8,
+          "2024": 225.5,
+          "2025": 225.2
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2001
+      }
+    ],
+    "M-Free-1500": [
+      {
+        "name": "Bobby Finke",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 24,
+        "pb": 879.65,
+        "sb": 882,
+        "hist": {
+          "2022": 885,
+          "2023": 883,
+          "2024": 882,
+          "2025": 882
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.98,
+        "h2h": {},
+        "birthYear": 2001
+      },
+      {
+        "name": "Daniel Wiffen",
+        "flag": "🇮🇪",
+        "country": "IRL",
+        "age": 24,
+        "pb": 874.6,
+        "sb": 878,
+        "hist": {
+          "2022": 889,
+          "2023": 881,
+          "2024": 878.5,
+          "2025": 878
+        },
+        "note": "2024 Olympic Champion",
+        "active": true,
+        "retired": null,
+        "champsMult": 0.977,
+        "h2h": {},
+        "birthYear": 2001
+      },
+      {
+        "name": "Florian Wellbrock",
+        "flag": "🇩🇪",
+        "country": "GER",
+        "age": 28,
+        "pb": 880.7,
+        "sb": 883,
+        "hist": {
+          "2022": 884.5,
+          "2023": 883.8,
+          "2024": 883.5,
+          "2025": 883
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1997
+      },
+      {
+        "name": "Ahmed Jaouadi",
+        "flag": "🇹🇳",
+        "country": "TUN",
+        "age": 23,
+        "pb": 882,
+        "sb": 883.5,
+        "hist": {
+          "2022": 892,
+          "2023": 887,
+          "2024": 885,
+          "2025": 883.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Gregorio Paltrinieri",
+        "flag": "🇮🇹",
+        "country": "ITA",
+        "age": 31,
+        "pb": 872.8,
+        "sb": 884,
+        "hist": {
+          "2022": 883.2,
+          "2023": 886,
+          "2024": 885,
+          "2025": 884
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1994
+      },
+      {
+        "name": "Henrik Christiansen",
+        "flag": "🇳🇴",
+        "country": "NOR",
+        "age": 25,
+        "pb": 885.08,
+        "sb": 886,
+        "hist": {
+          "2022": 890,
+          "2023": 889,
+          "2024": 888,
+          "2025": 886
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2000
+      },
+      {
+        "name": "Mykhailo Romanchuk",
+        "flag": "🇺🇦",
+        "country": "UKR",
+        "age": 28,
+        "pb": 884.09,
+        "sb": 887,
+        "hist": {
+          "2022": 888,
+          "2023": 887.5,
+          "2024": 887,
+          "2025": 887
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1997
+      },
+      {
+        "name": "Marcin Cieslak",
+        "flag": "🇵🇱",
+        "country": "POL",
+        "age": 24,
+        "pb": 887,
+        "sb": 889,
+        "hist": {
+          "2022": 892,
+          "2023": 891,
+          "2024": 890,
+          "2025": 889
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2001
+      }
+    ],
+    "M-Back-100": [
+      {
+        "name": "Pieter Coetze",
+        "flag": "🇿🇦",
+        "country": "RSA",
+        "age": 21,
+        "pb": 51.85,
+        "sb": 51.85,
+        "hist": {
+          "2022": 52.8,
+          "2023": 52.2,
+          "2024": 52,
+          "2025": 51.85
+        },
+        "note": "2025 World Champion",
+        "active": true,
+        "retired": null,
+        "champsMult": 0.978,
+        "h2h": {},
+        "birthYear": 2004
+      },
+      {
+        "name": "Thomas Ceccon",
+        "flag": "🇮🇹",
+        "country": "ITA",
+        "age": 24,
+        "pb": 51.6,
+        "sb": 51.9,
+        "hist": {
+          "2022": 52.3,
+          "2023": 52,
+          "2024": 51.9,
+          "2025": 51.9
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.978,
+        "h2h": {},
+        "birthYear": 2001
+      },
+      {
+        "name": "Yohann Ndoye-Brouard",
+        "flag": "🇫🇷",
+        "country": "FRA",
+        "age": 24,
+        "pb": 51.92,
+        "sb": 51.92,
+        "hist": {
+          "2022": 53,
+          "2023": 52.4,
+          "2024": 52.1,
+          "2025": 51.92
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2001
+      },
+      {
+        "name": "Hunter Armstrong",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 24,
+        "pb": 51.96,
+        "sb": 52.1,
+        "hist": {
+          "2022": 52.38,
+          "2023": 52.2,
+          "2024": 52.25,
+          "2025": 52.1
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2001
+      },
+      {
+        "name": "Kliment Kolesnikov",
+        "flag": "🇷🇺",
+        "country": "ROC",
+        "age": 25,
+        "pb": 52.1,
+        "sb": 52.2,
+        "hist": {
+          "2022": 52.6,
+          "2023": 52.4,
+          "2024": 52.3,
+          "2025": 52.2
+        },
+        "note": null,
+        "active": false,
+        "retired": null,
+        "inactiveNote": "Suspended/Ineligible",
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2000
+      },
+      {
+        "name": "Xu Jiayu",
+        "flag": "🇨🇳",
+        "country": "CHN",
+        "age": 29,
+        "pb": 52.28,
+        "sb": 52.35,
+        "hist": {
+          "2022": 52.7,
+          "2023": 52.55,
+          "2024": 52.4,
+          "2025": 52.35
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1996
+      },
+      {
+        "name": "Tommy Janton",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 23,
+        "pb": 52.8,
+        "sb": 53,
+        "hist": {
+          "2022": 54,
+          "2023": 53.5,
+          "2024": 53.2,
+          "2025": 53
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Luke Greenbank",
+        "flag": "🇬🇧",
+        "country": "GBR",
+        "age": 27,
+        "pb": 52.55,
+        "sb": 52.65,
+        "hist": {
+          "2022": 52.9,
+          "2023": 52.75,
+          "2024": 52.65,
+          "2025": 52.65
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1998
+      }
+    ],
+    "M-Back-200": [
+      {
+        "name": "Hubert Kos",
+        "flag": "🇭🇺",
+        "country": "HUN",
+        "age": 22,
+        "pb": 113.19,
+        "sb": 113.19,
+        "hist": {
+          "2022": 116,
+          "2023": 114.8,
+          "2024": 114,
+          "2025": 113.19
+        },
+        "note": "2025 World Champion",
+        "active": true,
+        "retired": null,
+        "champsMult": 0.977,
+        "h2h": {},
+        "birthYear": 2003
+      },
+      {
+        "name": "Pieter Coetze",
+        "flag": "🇿🇦",
+        "country": "RSA",
+        "age": 21,
+        "pb": 113.36,
+        "sb": 113.36,
+        "hist": {
+          "2022": 117,
+          "2023": 115,
+          "2024": 114.2,
+          "2025": 113.36
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.978,
+        "h2h": {},
+        "birthYear": 2004
+      },
+      {
+        "name": "Yohann Ndoye-Brouard",
+        "flag": "🇫🇷",
+        "country": "FRA",
+        "age": 24,
+        "pb": 114,
+        "sb": 114,
+        "hist": {
+          "2022": 117,
+          "2023": 115.5,
+          "2024": 114.8,
+          "2025": 114
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2001
+      },
+      {
+        "name": "Ryan Murphy",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 30,
+        "pb": 113.62,
+        "sb": 114.2,
+        "hist": {
+          "2022": 115,
+          "2023": 114.5,
+          "2024": 114.2,
+          "2025": 114.2
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1995
+      },
+      {
+        "name": "Jack Aikins",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 23,
+        "pb": 114.25,
+        "sb": 114.25,
+        "hist": {
+          "2022": 117,
+          "2023": 116,
+          "2024": 115.2,
+          "2025": 114.25
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Kliment Kolesnikov",
+        "flag": "🇷🇺",
+        "country": "ROC",
+        "age": 25,
+        "pb": 114.28999999999999,
+        "sb": 114.6,
+        "hist": {
+          "2022": 115.5,
+          "2023": 115,
+          "2024": 114.7,
+          "2025": 114.6
+        },
+        "note": null,
+        "active": false,
+        "retired": null,
+        "inactiveNote": "Suspended/Ineligible",
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2000
+      },
+      {
+        "name": "Mitch Larkin",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 31,
+        "pb": 114.03,
+        "sb": 114.8,
+        "hist": {
+          "2022": 115.2,
+          "2023": 114.8,
+          "2024": 114.5,
+          "2025": 114.8
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.005,
+        "h2h": {},
+        "birthYear": 1994
+      },
+      {
+        "name": "Luke Greenbank",
+        "flag": "🇬🇧",
+        "country": "GBR",
+        "age": 27,
+        "pb": 114.72,
+        "sb": 115,
+        "hist": {
+          "2022": 115.7,
+          "2023": 115.2,
+          "2024": 115,
+          "2025": 115
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1998
+      }
+    ],
+    "M-Breast-100": [
+      {
+        "name": "Qin Haiyang",
+        "flag": "🇨🇳",
+        "country": "CHN",
+        "age": 25,
+        "pb": 57.69,
+        "sb": 58.23,
+        "hist": {
+          "2022": 58.2,
+          "2023": 57.9,
+          "2024": 57.8,
+          "2025": 58.23
+        },
+        "note": "2025 World Champion",
+        "active": true,
+        "retired": null,
+        "champsMult": 0.975,
+        "h2h": {
+          "Adam Peaty": {
+            "wins": 2,
+            "losses": 4
+          }
+        },
+        "birthYear": 2000
+      },
+      {
+        "name": "Nicolo Martinenghi",
+        "flag": "🇮🇹",
+        "country": "ITA",
+        "age": 25,
+        "pb": 57.69,
+        "sb": 58.58,
+        "hist": {
+          "2022": 58,
+          "2023": 57.95,
+          "2024": 57.85,
+          "2025": 58.58
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2000
+      },
+      {
+        "name": "Denis Petrashov",
+        "flag": "🇰🇬",
+        "country": "KGZ",
+        "age": 27,
+        "pb": 58.6,
+        "sb": 58.88,
+        "hist": {
+          "2022": 59.2,
+          "2023": 58.9,
+          "2024": 58.7,
+          "2025": 58.88
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1998
+      },
+      {
+        "name": "Adam Peaty",
+        "flag": "🇬🇧",
+        "country": "GBR",
+        "age": 31,
+        "pb": 56.88,
+        "sb": 57.4,
+        "hist": {
+          "2022": 57.6,
+          "2023": 57.4,
+          "2024": 57.3,
+          "2025": 57.4
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.97,
+        "h2h": {
+          "Qin Haiyang": {
+            "wins": 4,
+            "losses": 2
+          }
+        },
+        "birthYear": 1994
+      },
+      {
+        "name": "Arno Kamminga",
+        "flag": "🇳🇱",
+        "country": "NED",
+        "age": 29,
+        "pb": 57.9,
+        "sb": 58.1,
+        "hist": {
+          "2022": 58.3,
+          "2023": 58.2,
+          "2024": 58.1,
+          "2025": 58.1
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1996
+      },
+      {
+        "name": "Yan Zibei",
+        "flag": "🇨🇳",
+        "country": "CHN",
+        "age": 25,
+        "pb": 58.06,
+        "sb": 58.3,
+        "hist": {
+          "2022": 58.5,
+          "2023": 58.3,
+          "2024": 58.2,
+          "2025": 58.3
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2000
+      },
+      {
+        "name": "Josh Prenot",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 32,
+        "pb": 58.65,
+        "sb": 58.8,
+        "hist": {
+          "2022": 59.1,
+          "2023": 58.9,
+          "2024": 58.8,
+          "2025": 58.8
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1993
+      },
+      {
+        "name": "Caspar Corbeau",
+        "flag": "🇳🇱",
+        "country": "NED",
+        "age": 24,
+        "pb": 58.8,
+        "sb": 58.9,
+        "hist": {
+          "2022": 59.5,
+          "2023": 59.1,
+          "2024": 58.9,
+          "2025": 58.9
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2001
+      }
+    ],
+    "M-Breast-200": [
+      {
+        "name": "Qin Haiyang",
+        "flag": "🇨🇳",
+        "country": "CHN",
+        "age": 25,
+        "pb": 125.48,
+        "sb": 127.41,
+        "hist": {
+          "2022": 127.5,
+          "2023": 126.9,
+          "2024": 126.8,
+          "2025": 127.41
+        },
+        "note": "2025 World Champion",
+        "active": true,
+        "retired": null,
+        "champsMult": 0.975,
+        "h2h": {
+          "Adam Peaty": {
+            "wins": 2,
+            "losses": 4
+          }
+        },
+        "birthYear": 2000
+      },
+      {
+        "name": "Ippei Watanabe",
+        "flag": "🇯🇵",
+        "country": "JPN",
+        "age": 27,
+        "pb": 126.67,
+        "sb": 127.7,
+        "hist": {
+          "2022": 129,
+          "2023": 128.2,
+          "2024": 127.8,
+          "2025": 127.7
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1998
+      },
+      {
+        "name": "Caspar Corbeau",
+        "flag": "🇳🇱",
+        "country": "NED",
+        "age": 24,
+        "pb": 127.5,
+        "sb": 127.73,
+        "hist": {
+          "2022": 130,
+          "2023": 129,
+          "2024": 128.2,
+          "2025": 127.73
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2001
+      },
+      {
+        "name": "Leon Marchand",
+        "flag": "🇫🇷",
+        "country": "FRA",
+        "age": 23,
+        "pb": 125.68,
+        "sb": 127,
+        "hist": {
+          "2022": 128,
+          "2023": 126.8,
+          "2024": 126.5,
+          "2025": 127
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.965,
+        "h2h": {
+          "Daiya Seto": {
+            "wins": 8,
+            "losses": 1
+          },
+          "Wang Shun": {
+            "wins": 10,
+            "losses": 0
+          }
+        },
+        "birthYear": 2002
+      },
+      {
+        "name": "Zac Stubblety-Cook",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 25,
+        "pb": 126.38,
+        "sb": 127.5,
+        "hist": {
+          "2022": 127.8,
+          "2023": 127.5,
+          "2024": 127.3,
+          "2025": 127.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2000
+      },
+      {
+        "name": "Arno Kamminga",
+        "flag": "🇳🇱",
+        "country": "NED",
+        "age": 29,
+        "pb": 126.6,
+        "sb": 128,
+        "hist": {
+          "2022": 128.1,
+          "2023": 127.8,
+          "2024": 127.6,
+          "2025": 128
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1996
+      },
+      {
+        "name": "Andrew Wilson",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 32,
+        "pb": 127.71,
+        "sb": 128.5,
+        "hist": {
+          "2022": 128.8,
+          "2023": 128.7,
+          "2024": 128.6,
+          "2025": 128.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1993
+      },
+      {
+        "name": "Louis Finchett",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 22,
+        "pb": 128.1,
+        "sb": 128.8,
+        "hist": {
+          "2022": 130.5,
+          "2023": 129.5,
+          "2024": 129,
+          "2025": 128.8
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2003
+      }
+    ],
+    "M-Fly-100": [
+      {
+        "name": "Caeleb Dressel",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 28,
+        "pb": 49.45,
+        "sb": 49.8,
+        "hist": {
+          "2022": 50.1,
+          "2023": 49.9,
+          "2024": 49.8,
+          "2025": 49.8
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.972,
+        "h2h": {},
+        "birthYear": 1997
+      },
+      {
+        "name": "Kristof Milak",
+        "flag": "🇭🇺",
+        "country": "HUN",
+        "age": 25,
+        "pb": 49.68,
+        "sb": 50,
+        "hist": {
+          "2022": 50.4,
+          "2023": 50.1,
+          "2024": 50,
+          "2025": 50
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.973,
+        "h2h": {},
+        "birthYear": 2000
+      },
+      {
+        "name": "Noe Ponti",
+        "flag": "🇨🇭",
+        "country": "SUI",
+        "age": 23,
+        "pb": 50.21,
+        "sb": 50.4,
+        "hist": {
+          "2022": 51,
+          "2023": 50.7,
+          "2024": 50.5,
+          "2025": 50.4
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Maxime Grousset",
+        "flag": "🇫🇷",
+        "country": "FRA",
+        "age": 25,
+        "pb": 50.24,
+        "sb": 50.45,
+        "hist": {
+          "2022": 51.1,
+          "2023": 50.8,
+          "2024": 50.55,
+          "2025": 50.45
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2000
+      },
+      {
+        "name": "Thomas Ceccon",
+        "flag": "🇮🇹",
+        "country": "ITA",
+        "age": 24,
+        "pb": 50.4,
+        "sb": 50.5,
+        "hist": {
+          "2022": 51.2,
+          "2023": 50.8,
+          "2024": 50.6,
+          "2025": 50.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.978,
+        "h2h": {},
+        "birthYear": 2001
+      },
+      {
+        "name": "Chad Le Clos",
+        "flag": "🇿🇦",
+        "country": "RSA",
+        "age": 33,
+        "pb": 50.43,
+        "sb": 50.8,
+        "hist": {
+          "2022": 51.1,
+          "2023": 50.9,
+          "2024": 50.8,
+          "2025": 50.8
+        },
+        "note": null,
+        "active": false,
+        "retired": 2025,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1992
+      },
+      {
+        "name": "Nyls Korstanje",
+        "flag": "🇳🇱",
+        "country": "NED",
+        "age": 26,
+        "pb": 50.51,
+        "sb": 50.85,
+        "hist": {
+          "2022": 51.3,
+          "2023": 51,
+          "2024": 50.9,
+          "2025": 50.85
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1999
+      },
+      {
+        "name": "Tom Shields",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 32,
+        "pb": 50.7,
+        "sb": 51,
+        "hist": {
+          "2022": 51.3,
+          "2023": 51.1,
+          "2024": 51,
+          "2025": 51
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1993
+      }
+    ],
+    "M-Fly-200": [
+      {
+        "name": "Luca Urlando",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 23,
+        "pb": 111.87,
+        "sb": 111.87,
+        "hist": {
+          "2022": 115.8,
+          "2023": 115.5,
+          "2024": 115.2,
+          "2025": 111.87
+        },
+        "note": "2025 World Champion",
+        "active": true,
+        "retired": null,
+        "champsMult": 0.98,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Kristof Milak",
+        "flag": "🇭🇺",
+        "country": "HUN",
+        "age": 25,
+        "pb": 110.34,
+        "sb": 111.2,
+        "hist": {
+          "2022": 111.8,
+          "2023": 111.2,
+          "2024": 111,
+          "2025": 111.2
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.973,
+        "h2h": {},
+        "birthYear": 2000
+      },
+      {
+        "name": "Leon Marchand",
+        "flag": "🇫🇷",
+        "country": "FRA",
+        "age": 23,
+        "pb": 111.21000000000001,
+        "sb": 112,
+        "hist": {
+          "2022": 113,
+          "2023": 112,
+          "2024": 111.8,
+          "2025": 112
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.965,
+        "h2h": {
+          "Daiya Seto": {
+            "wins": 8,
+            "losses": 1
+          },
+          "Wang Shun": {
+            "wins": 10,
+            "losses": 0
+          }
+        },
+        "birthYear": 2002
+      },
+      {
+        "name": "Noe Ponti",
+        "flag": "🇨🇭",
+        "country": "SUI",
+        "age": 23,
+        "pb": 112.9,
+        "sb": 113.3,
+        "hist": {
+          "2022": 114.8,
+          "2023": 114,
+          "2024": 113.5,
+          "2025": 113.3
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Jeremy Desplanches",
+        "flag": "🇨🇭",
+        "country": "SUI",
+        "age": 30,
+        "pb": 113.44,
+        "sb": 113.8,
+        "hist": {
+          "2022": 114.5,
+          "2023": 114.2,
+          "2024": 114,
+          "2025": 113.8
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1995
+      },
+      {
+        "name": "Naoki Mizunuma",
+        "flag": "🇯🇵",
+        "country": "JPN",
+        "age": 28,
+        "pb": 114.02000000000001,
+        "sb": 114.2,
+        "hist": {
+          "2022": 115,
+          "2023": 114.7,
+          "2024": 114.5,
+          "2025": 114.2
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1997
+      },
+      {
+        "name": "Jack Hallam",
+        "flag": "🇬🇧",
+        "country": "GBR",
+        "age": 24,
+        "pb": 114.8,
+        "sb": 115,
+        "hist": {
+          "2022": 116.2,
+          "2023": 115.8,
+          "2024": 115.6,
+          "2025": 115
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2001
+      },
+      {
+        "name": "Tom Shields",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 32,
+        "pb": 113.6,
+        "sb": 114.5,
+        "hist": {
+          "2022": 114.8,
+          "2023": 114.6,
+          "2024": 114.8,
+          "2025": 114.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1993
+      }
+    ],
+    "M-IM-200": [
+      {
+        "name": "Leon Marchand",
+        "flag": "🇫🇷",
+        "country": "FRA",
+        "age": 23,
+        "pb": 112.69,
+        "sb": 112.69,
+        "hist": {
+          "2022": 117,
+          "2023": 115.8,
+          "2024": 114.81,
+          "2025": 112.69
+        },
+        "note": "2025 WR 1:52.69",
+        "active": true,
+        "retired": null,
+        "champsMult": 0.965,
+        "h2h": {
+          "Daiya Seto": {
+            "wins": 8,
+            "losses": 1
+          },
+          "Wang Shun": {
+            "wins": 10,
+            "losses": 0
+          }
+        },
+        "birthYear": 2002
+      },
+      {
+        "name": "Chase Kalisz",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 31,
+        "pb": 115.28,
+        "sb": 116,
+        "hist": {
+          "2022": 117,
+          "2023": 116.7,
+          "2024": 116.5,
+          "2025": 116
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1994
+      },
+      {
+        "name": "Wang Shun",
+        "flag": "🇨🇳",
+        "country": "CHN",
+        "age": 30,
+        "pb": 116.37,
+        "sb": 116.3,
+        "hist": {
+          "2022": 117.5,
+          "2023": 117.2,
+          "2024": 117,
+          "2025": 116.3
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1995
+      },
+      {
+        "name": "Grant House",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 26,
+        "pb": 117.8,
+        "sb": 118.22,
+        "hist": {
+          "2022": 119.5,
+          "2023": 119,
+          "2024": 118.5,
+          "2025": 118.22
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1999
+      },
+      {
+        "name": "Daiya Seto",
+        "flag": "🇯🇵",
+        "country": "JPN",
+        "age": 31,
+        "pb": 115.27000000000001,
+        "sb": 117,
+        "hist": {
+          "2022": 117.2,
+          "2023": 117,
+          "2024": 116.8,
+          "2025": 117
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.005,
+        "h2h": {},
+        "birthYear": 1994
+      },
+      {
+        "name": "Hugo Gonzalez",
+        "flag": "🇪🇸",
+        "country": "ESP",
+        "age": 24,
+        "pb": 116.5,
+        "sb": 117.2,
+        "hist": {
+          "2022": 118,
+          "2023": 117.6,
+          "2024": 117.5,
+          "2025": 117.2
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2001
+      },
+      {
+        "name": "Alberto Razzetti",
+        "flag": "🇮🇹",
+        "country": "ITA",
+        "age": 25,
+        "pb": 117.4,
+        "sb": 117.8,
+        "hist": {
+          "2022": 119,
+          "2023": 118.6,
+          "2024": 118.4,
+          "2025": 117.8
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2000
+      },
+      {
+        "name": "Jay Litherland",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 29,
+        "pb": 116.99000000000001,
+        "sb": 117.9,
+        "hist": {
+          "2022": 118.5,
+          "2023": 118.2,
+          "2024": 118,
+          "2025": 117.9
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1996
+      }
+    ],
+    "M-IM-400": [
+      {
+        "name": "Leon Marchand",
+        "flag": "🇫🇷",
+        "country": "FRA",
+        "age": 23,
+        "pb": 242.5,
+        "sb": 244.73,
+        "hist": {
+          "2022": 246,
+          "2023": 243.9,
+          "2024": 243.5,
+          "2025": 244.73
+        },
+        "note": "2025 World Champion",
+        "active": true,
+        "retired": null,
+        "champsMult": 0.965,
+        "h2h": {
+          "Daiya Seto": {
+            "wins": 8,
+            "losses": 1
+          },
+          "Wang Shun": {
+            "wins": 10,
+            "losses": 0
+          }
+        },
+        "birthYear": 2002
+      },
+      {
+        "name": "Chase Kalisz",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 31,
+        "pb": 245.9,
+        "sb": 247,
+        "hist": {
+          "2022": 248.5,
+          "2023": 247.2,
+          "2024": 247,
+          "2025": 247
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1994
+      },
+      {
+        "name": "Wang Shun",
+        "flag": "🇨🇳",
+        "country": "CHN",
+        "age": 30,
+        "pb": 248,
+        "sb": 247.8,
+        "hist": {
+          "2022": 250,
+          "2023": 249.5,
+          "2024": 249,
+          "2025": 247.8
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1995
+      },
+      {
+        "name": "Daiya Seto",
+        "flag": "🇯🇵",
+        "country": "JPN",
+        "age": 31,
+        "pb": 246.24,
+        "sb": 247.5,
+        "hist": {
+          "2022": 248,
+          "2023": 247.8,
+          "2024": 247.5,
+          "2025": 247.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.005,
+        "h2h": {},
+        "birthYear": 1994
+      },
+      {
+        "name": "Alberto Razzetti",
+        "flag": "🇮🇹",
+        "country": "ITA",
+        "age": 25,
+        "pb": 248.42,
+        "sb": 249,
+        "hist": {
+          "2022": 251,
+          "2023": 250,
+          "2024": 249.5,
+          "2025": 249
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2000
+      },
+      {
+        "name": "Hugo Gonzalez",
+        "flag": "🇪🇸",
+        "country": "ESP",
+        "age": 24,
+        "pb": 248.57,
+        "sb": 249.2,
+        "hist": {
+          "2022": 251.5,
+          "2023": 250.3,
+          "2024": 249.8,
+          "2025": 249.2
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2001
+      },
+      {
+        "name": "Jay Litherland",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 29,
+        "pb": 249.28,
+        "sb": 250.5,
+        "hist": {
+          "2022": 251.8,
+          "2023": 250.8,
+          "2024": 250.5,
+          "2025": 250.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1996
+      },
+      {
+        "name": "Grant House",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 26,
+        "pb": 250,
+        "sb": 250.8,
+        "hist": {
+          "2022": 253,
+          "2023": 252,
+          "2024": 251.5,
+          "2025": 250.8
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1999
+      }
+    ],
+    "W-Free-50": [
+      {
+        "name": "Sarah Sjostrom",
+        "flag": "🇸🇪",
+        "country": "SWE",
+        "age": 32,
+        "pb": 23.61,
+        "sb": 23.8,
+        "hist": {
+          "2022": 24.1,
+          "2023": 23.95,
+          "2024": 23.85,
+          "2025": 23.8
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.975,
+        "h2h": {},
+        "birthYear": 1993
+      },
+      {
+        "name": "Gretchen Walsh",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 23,
+        "pb": 23.97,
+        "sb": 23.91,
+        "hist": {
+          "2022": 24.6,
+          "2023": 24.2,
+          "2024": 24,
+          "2025": 23.91
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.978,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Emma McKeon",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 31,
+        "pb": 23.81,
+        "sb": 23.95,
+        "hist": {
+          "2022": 24.15,
+          "2023": 24.05,
+          "2024": 24,
+          "2025": 23.95
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1994
+      },
+      {
+        "name": "Ranomi Kromowidjojo",
+        "flag": "🇳🇱",
+        "country": "NED",
+        "age": 35,
+        "pb": 23.97,
+        "sb": 24.1,
+        "hist": {
+          "2022": 24.3,
+          "2023": 24.2,
+          "2024": 24.15,
+          "2025": 24.1
+        },
+        "note": null,
+        "active": false,
+        "retired": 2023,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1990
+      },
+      {
+        "name": "Pernille Blume",
+        "flag": "🇩🇰",
+        "country": "DEN",
+        "age": 31,
+        "pb": 24.07,
+        "sb": 24.18,
+        "hist": {
+          "2022": 24.4,
+          "2023": 24.28,
+          "2024": 24.2,
+          "2025": 24.18
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1994
+      },
+      {
+        "name": "Cate Campbell",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 33,
+        "pb": 24.12,
+        "sb": 24.25,
+        "hist": {
+          "2022": 24.45,
+          "2023": 24.4,
+          "2024": 24.32,
+          "2025": 24.25
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1992
+      },
+      {
+        "name": "Rikako Ikee",
+        "flag": "🇯🇵",
+        "country": "JPN",
+        "age": 25,
+        "pb": 24.11,
+        "sb": 24.22,
+        "hist": {
+          "2022": 24.5,
+          "2023": 24.35,
+          "2024": 24.28,
+          "2025": 24.22
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2000
+      },
+      {
+        "name": "Femke Heemskerk",
+        "flag": "🇳🇱",
+        "country": "NED",
+        "age": 37,
+        "pb": 24.18,
+        "sb": 24.35,
+        "hist": {
+          "2022": 24.55,
+          "2023": 24.45,
+          "2024": 24.4,
+          "2025": 24.35
+        },
+        "note": null,
+        "active": false,
+        "retired": 2024,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1988
+      }
+    ],
+    "W-Free-100": [
+      {
+        "name": "Torrie Huske",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 23,
+        "pb": 52.03,
+        "sb": 52.43,
+        "hist": {
+          "2022": 52.7,
+          "2023": 52.4,
+          "2024": 52.3,
+          "2025": 52.43
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.978,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Marrit Steenbergen",
+        "flag": "🇳🇱",
+        "country": "NED",
+        "age": 25,
+        "pb": 52.2,
+        "sb": 52.5,
+        "hist": {
+          "2022": 53,
+          "2023": 52.7,
+          "2024": 52.6,
+          "2025": 52.5
+        },
+        "note": "2025 World Champion",
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2000
+      },
+      {
+        "name": "Sarah Sjostrom",
+        "flag": "🇸🇪",
+        "country": "SWE",
+        "age": 32,
+        "pb": 51.71,
+        "sb": 52.55,
+        "hist": {
+          "2022": 52.45,
+          "2023": 52.25,
+          "2024": 52.1,
+          "2025": 52.55
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.975,
+        "h2h": {},
+        "birthYear": 1993
+      },
+      {
+        "name": "Gretchen Walsh",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 23,
+        "pb": 52.35,
+        "sb": 52.6,
+        "hist": {
+          "2022": 53.2,
+          "2023": 53,
+          "2024": 52.95,
+          "2025": 52.6
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.978,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Emma McKeon",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 31,
+        "pb": 51.96,
+        "sb": 52.65,
+        "hist": {
+          "2022": 52.6,
+          "2023": 52.5,
+          "2024": 52.4,
+          "2025": 52.65
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1994
+      },
+      {
+        "name": "Penny Oleksiak",
+        "flag": "🇨🇦",
+        "country": "CAN",
+        "age": 26,
+        "pb": 52.03,
+        "sb": 52.7,
+        "hist": {
+          "2022": 52.85,
+          "2023": 52.7,
+          "2024": 52.6,
+          "2025": 52.7
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1999
+      },
+      {
+        "name": "Maggie Mac Neil",
+        "flag": "🇨🇦",
+        "country": "CAN",
+        "age": 25,
+        "pb": 52.25,
+        "sb": 52.75,
+        "hist": {
+          "2022": 53,
+          "2023": 52.9,
+          "2024": 52.85,
+          "2025": 52.75
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2000
+      },
+      {
+        "name": "Mollie O'Callaghan",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 21,
+        "pb": 52.35,
+        "sb": 52.8,
+        "hist": {
+          "2022": 53.5,
+          "2023": 53.3,
+          "2024": 53.2,
+          "2025": 52.8
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.975,
+        "h2h": {},
+        "birthYear": 2004
+      },
+      {
+        "name": "Cate Campbell",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 33,
+        "pb": 52.08,
+        "sb": 52.9,
+        "hist": {
+          "2022": 52.9,
+          "2023": 52.8,
+          "2024": 52.75,
+          "2025": 52.9
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1992
+      },
+      {
+        "name": "Rikako Ikee",
+        "flag": "🇯🇵",
+        "country": "JPN",
+        "age": 25,
+        "pb": 52.79,
+        "sb": 53,
+        "hist": {
+          "2022": 53.3,
+          "2023": 53.2,
+          "2024": 53.1,
+          "2025": 53
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2000
+      }
+    ],
+    "W-Free-200": [
+      {
+        "name": "Mollie O'Callaghan",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 21,
+        "pb": 112.31,
+        "sb": 113,
+        "hist": {
+          "2022": 115,
+          "2023": 113.5,
+          "2024": 113,
+          "2025": 113
+        },
+        "note": "2025 World Champion",
+        "active": true,
+        "retired": null,
+        "champsMult": 0.975,
+        "h2h": {},
+        "birthYear": 2004
+      },
+      {
+        "name": "Ariarne Titmus",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 25,
+        "pb": 112.68,
+        "sb": 113.2,
+        "hist": {
+          "2022": 113.8,
+          "2023": 113.5,
+          "2024": 113.3,
+          "2025": 113.2
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.976,
+        "h2h": {
+          "Katie Ledecky": {
+            "wins": 4,
+            "losses": 12
+          }
+        },
+        "birthYear": 2000
+      },
+      {
+        "name": "Claire Weinstein",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 19,
+        "pb": 114.92,
+        "sb": 114.92,
+        "hist": {
+          "2022": 118,
+          "2023": 116.5,
+          "2024": 115.5,
+          "2025": 114.92
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2006
+      },
+      {
+        "name": "Summer McIntosh",
+        "flag": "🇨🇦",
+        "country": "CAN",
+        "age": 19,
+        "pb": 113.13,
+        "sb": 114,
+        "hist": {
+          "2022": 115,
+          "2023": 114,
+          "2024": 113.8,
+          "2025": 114
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.972,
+        "h2h": {
+          "Katie Ledecky": {
+            "wins": 2,
+            "losses": 8
+          }
+        },
+        "birthYear": 2006
+      },
+      {
+        "name": "Katie Ledecky",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 28,
+        "pb": 112.8,
+        "sb": 115.25999999999999,
+        "hist": {
+          "2022": 114.4,
+          "2023": 114.2,
+          "2024": 114,
+          "2025": 115.25999999999999
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.97,
+        "h2h": {
+          "Ariarne Titmus": {
+            "wins": 12,
+            "losses": 4
+          },
+          "Summer McIntosh": {
+            "wins": 8,
+            "losses": 2
+          }
+        },
+        "birthYear": 1997
+      },
+      {
+        "name": "Siobhan Haughey",
+        "flag": "🇭🇰",
+        "country": "HKG",
+        "age": 28,
+        "pb": 112.71000000000001,
+        "sb": 114.3,
+        "hist": {
+          "2022": 113.8,
+          "2023": 114,
+          "2024": 114.2,
+          "2025": 114.3
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1997
+      },
+      {
+        "name": "Yang Junxuan",
+        "flag": "🇨🇳",
+        "country": "CHN",
+        "age": 23,
+        "pb": 113.77000000000001,
+        "sb": 114.5,
+        "hist": {
+          "2022": 115.2,
+          "2023": 114.9,
+          "2024": 114.7,
+          "2025": 114.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Erika Fairweather",
+        "flag": "🇳🇿",
+        "country": "NZL",
+        "age": 22,
+        "pb": 114.4,
+        "sb": 114.8,
+        "hist": {
+          "2022": 116,
+          "2023": 115.3,
+          "2024": 115,
+          "2025": 114.8
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2003
+      }
+    ],
+    "W-Free-400": [
+      {
+        "name": "Katie Ledecky",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 28,
+        "pb": 236.46,
+        "sb": 236.81,
+        "hist": {
+          "2022": 239,
+          "2023": 238.4,
+          "2024": 238,
+          "2025": 236.81
+        },
+        "note": "2nd fastest all time",
+        "active": true,
+        "retired": null,
+        "champsMult": 0.97,
+        "h2h": {
+          "Ariarne Titmus": {
+            "wins": 12,
+            "losses": 4
+          },
+          "Summer McIntosh": {
+            "wins": 8,
+            "losses": 2
+          }
+        },
+        "birthYear": 1997
+      },
+      {
+        "name": "Ariarne Titmus",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 25,
+        "pb": 236.69,
+        "sb": 237.5,
+        "hist": {
+          "2022": 238.8,
+          "2023": 238.6,
+          "2024": 238.5,
+          "2025": 237.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.976,
+        "h2h": {
+          "Katie Ledecky": {
+            "wins": 4,
+            "losses": 12
+          }
+        },
+        "birthYear": 2000
+      },
+      {
+        "name": "Summer McIntosh",
+        "flag": "🇨🇦",
+        "country": "CAN",
+        "age": 19,
+        "pb": 237.01,
+        "sb": 238,
+        "hist": {
+          "2022": 240.5,
+          "2023": 239.2,
+          "2024": 239,
+          "2025": 238
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.972,
+        "h2h": {
+          "Katie Ledecky": {
+            "wins": 2,
+            "losses": 8
+          }
+        },
+        "birthYear": 2006
+      },
+      {
+        "name": "Erika Fairweather",
+        "flag": "🇳🇿",
+        "country": "NZL",
+        "age": 22,
+        "pb": 240.32,
+        "sb": 241.2,
+        "hist": {
+          "2022": 243,
+          "2023": 242,
+          "2024": 241.5,
+          "2025": 241.2
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2003
+      },
+      {
+        "name": "Guilong Li",
+        "flag": "🇨🇳",
+        "country": "CHN",
+        "age": 21,
+        "pb": 240.8,
+        "sb": 241.8,
+        "hist": {
+          "2022": 244,
+          "2023": 242.5,
+          "2024": 242,
+          "2025": 241.8
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2004
+      },
+      {
+        "name": "Lani Pallister",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 23,
+        "pb": 241.5,
+        "sb": 243,
+        "hist": {
+          "2022": 245.5,
+          "2023": 244.5,
+          "2024": 244,
+          "2025": 243
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.98,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Iona Anderson",
+        "flag": "🇬🇧",
+        "country": "GBR",
+        "age": 22,
+        "pb": 242.5,
+        "sb": 243.4,
+        "hist": {
+          "2022": 245,
+          "2023": 244,
+          "2024": 243.5,
+          "2025": 243.4
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2003
+      },
+      {
+        "name": "Claire Weinstein",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 19,
+        "pb": 243.5,
+        "sb": 243.8,
+        "hist": {
+          "2022": 248,
+          "2023": 246,
+          "2024": 245,
+          "2025": 243.8
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2006
+      }
+    ],
+    "W-Free-800": [
+      {
+        "name": "Katie Ledecky",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 28,
+        "pb": 484.79,
+        "sb": 485.62,
+        "hist": {
+          "2022": 489,
+          "2023": 488,
+          "2024": 487,
+          "2025": 485.62
+        },
+        "note": "2025 World Champion (CR)",
+        "active": true,
+        "retired": null,
+        "champsMult": 0.97,
+        "h2h": {
+          "Ariarne Titmus": {
+            "wins": 12,
+            "losses": 4
+          },
+          "Summer McIntosh": {
+            "wins": 8,
+            "losses": 2
+          }
+        },
+        "birthYear": 1997
+      },
+      {
+        "name": "Lani Pallister",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 23,
+        "pb": 485.98,
+        "sb": 485.98,
+        "hist": {
+          "2022": 496,
+          "2023": 494,
+          "2024": 492.5,
+          "2025": 485.98
+        },
+        "note": "2025 Silver (Oceania Record)",
+        "active": true,
+        "retired": null,
+        "champsMult": 0.98,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Summer McIntosh",
+        "flag": "🇨🇦",
+        "country": "CAN",
+        "age": 19,
+        "pb": 487.29,
+        "sb": 487.29,
+        "hist": {
+          "2022": 495,
+          "2023": 493,
+          "2024": 492,
+          "2025": 487.29
+        },
+        "note": "2025 Bronze",
+        "active": true,
+        "retired": null,
+        "champsMult": 0.972,
+        "h2h": {
+          "Katie Ledecky": {
+            "wins": 2,
+            "losses": 8
+          }
+        },
+        "birthYear": 2006
+      },
+      {
+        "name": "Ariarne Titmus",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 25,
+        "pb": 488.65,
+        "sb": 489,
+        "hist": {
+          "2022": 491,
+          "2023": 490.5,
+          "2024": 490,
+          "2025": 489
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.976,
+        "h2h": {
+          "Katie Ledecky": {
+            "wins": 4,
+            "losses": 12
+          }
+        },
+        "birthYear": 2000
+      },
+      {
+        "name": "Erika Fairweather",
+        "flag": "🇳🇿",
+        "country": "NZL",
+        "age": 22,
+        "pb": 493.5,
+        "sb": 494,
+        "hist": {
+          "2022": 498,
+          "2023": 497,
+          "2024": 496,
+          "2025": 494
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2003
+      },
+      {
+        "name": "Guilong Li",
+        "flag": "🇨🇳",
+        "country": "CHN",
+        "age": 21,
+        "pb": 494.5,
+        "sb": 495,
+        "hist": {
+          "2022": 500,
+          "2023": 498,
+          "2024": 497,
+          "2025": 495
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2004
+      },
+      {
+        "name": "Simona Quadarella",
+        "flag": "🇮🇹",
+        "country": "ITA",
+        "age": 25,
+        "pb": 494.82,
+        "sb": 496,
+        "hist": {
+          "2022": 497,
+          "2023": 497.5,
+          "2024": 497.5,
+          "2025": 496
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2000
+      },
+      {
+        "name": "Jiaming Wu",
+        "flag": "🇨🇳",
+        "country": "CHN",
+        "age": 20,
+        "pb": 497,
+        "sb": 497.5,
+        "hist": {
+          "2022": 502,
+          "2023": 500,
+          "2024": 498,
+          "2025": 497.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2005
+      }
+    ],
+    "W-Back-100": [
+      {
+        "name": "Kaylee McKeown",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 24,
+        "pb": 57.16,
+        "sb": 57.16,
+        "hist": {
+          "2022": 57.9,
+          "2023": 57.8,
+          "2024": 57.72,
+          "2025": 57.16
+        },
+        "note": "2025 World Champion (CR)",
+        "active": true,
+        "retired": null,
+        "champsMult": 0.972,
+        "h2h": {
+          "Regan Smith": {
+            "wins": 7,
+            "losses": 5
+          }
+        },
+        "birthYear": 2001
+      },
+      {
+        "name": "Regan Smith",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 23,
+        "pb": 57.33,
+        "sb": 57.5,
+        "hist": {
+          "2022": 58.1,
+          "2023": 57.9,
+          "2024": 57.7,
+          "2025": 57.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.976,
+        "h2h": {
+          "Kaylee McKeown": {
+            "wins": 5,
+            "losses": 7
+          }
+        },
+        "birthYear": 2002
+      },
+      {
+        "name": "Katharine Berkoff",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 24,
+        "pb": 58.05,
+        "sb": 58.2,
+        "hist": {
+          "2022": 58.7,
+          "2023": 58.5,
+          "2024": 58.3,
+          "2025": 58.2
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2001
+      },
+      {
+        "name": "Kylie Masse",
+        "flag": "🇨🇦",
+        "country": "CAN",
+        "age": 29,
+        "pb": 58.17,
+        "sb": 58.35,
+        "hist": {
+          "2022": 58.8,
+          "2023": 58.65,
+          "2024": 58.5,
+          "2025": 58.35
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1996
+      },
+      {
+        "name": "Claire Curzan",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 21,
+        "pb": 58,
+        "sb": 58.1,
+        "hist": {
+          "2022": 58.8,
+          "2023": 58.5,
+          "2024": 58.3,
+          "2025": 58.1
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2004
+      },
+      {
+        "name": "Lisa Bratton",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 27,
+        "pb": 58.65,
+        "sb": 58.8,
+        "hist": {
+          "2022": 59.3,
+          "2023": 59,
+          "2024": 58.9,
+          "2025": 58.8
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1998
+      },
+      {
+        "name": "Maria Kameneva",
+        "flag": "🇷🇺",
+        "country": "ROC",
+        "age": 25,
+        "pb": 58.29,
+        "sb": 58.55,
+        "hist": {
+          "2022": 59,
+          "2023": 58.8,
+          "2024": 58.6,
+          "2025": 58.55
+        },
+        "note": null,
+        "active": false,
+        "retired": null,
+        "inactiveNote": "Suspended/Ineligible",
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2000
+      },
+      {
+        "name": "Phoebe Bacon",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 23,
+        "pb": 58.6,
+        "sb": 58.9,
+        "hist": {
+          "2022": 59.5,
+          "2023": 59.2,
+          "2024": 59,
+          "2025": 58.9
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2002
+      }
+    ],
+    "W-Back-200": [
+      {
+        "name": "Kaylee McKeown",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 24,
+        "pb": 123.14,
+        "sb": 123.33,
+        "hist": {
+          "2022": 124.5,
+          "2023": 123.9,
+          "2024": 123.6,
+          "2025": 123.33
+        },
+        "note": "2025 World Champion",
+        "active": true,
+        "retired": null,
+        "champsMult": 0.972,
+        "h2h": {
+          "Regan Smith": {
+            "wins": 7,
+            "losses": 5
+          }
+        },
+        "birthYear": 2001
+      },
+      {
+        "name": "Regan Smith",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 23,
+        "pb": 123.35,
+        "sb": 124.29,
+        "hist": {
+          "2022": 124.6,
+          "2023": 124,
+          "2024": 123.8,
+          "2025": 124.29
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.976,
+        "h2h": {
+          "Kaylee McKeown": {
+            "wins": 5,
+            "losses": 7
+          }
+        },
+        "birthYear": 2002
+      },
+      {
+        "name": "Claire Curzan",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 21,
+        "pb": 125.09,
+        "sb": 125.09,
+        "hist": {
+          "2022": 128,
+          "2023": 126.5,
+          "2024": 125.8,
+          "2025": 125.09
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2004
+      },
+      {
+        "name": "Kylie Masse",
+        "flag": "🇨🇦",
+        "country": "CAN",
+        "age": 29,
+        "pb": 124.02,
+        "sb": 124.5,
+        "hist": {
+          "2022": 125,
+          "2023": 124.8,
+          "2024": 124.5,
+          "2025": 124.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1996
+      },
+      {
+        "name": "Bianca Nelson",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 21,
+        "pb": 126,
+        "sb": 126.2,
+        "hist": {
+          "2022": 128.5,
+          "2023": 127.8,
+          "2024": 127,
+          "2025": 126.2
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2004
+      },
+      {
+        "name": "Sophie Hansson",
+        "flag": "🇸🇪",
+        "country": "SWE",
+        "age": 26,
+        "pb": 125.76,
+        "sb": 125.9,
+        "hist": {
+          "2022": 126.8,
+          "2023": 126.3,
+          "2024": 126,
+          "2025": 125.9
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1999
+      },
+      {
+        "name": "Lisa Bratton",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 27,
+        "pb": 125.84,
+        "sb": 125.84,
+        "hist": {
+          "2022": 127,
+          "2023": 126.7,
+          "2024": 126.5,
+          "2025": 125.84
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1998
+      },
+      {
+        "name": "Phoebe Bacon",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 23,
+        "pb": 126.2,
+        "sb": 126.5,
+        "hist": {
+          "2022": 127.3,
+          "2023": 127,
+          "2024": 126.8,
+          "2025": 126.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2002
+      }
+    ],
+    "W-Breast-100": [
+      {
+        "name": "Anna Elendt",
+        "flag": "🇩🇪",
+        "country": "GER",
+        "age": 23,
+        "pb": 65.19,
+        "sb": 65.19,
+        "hist": {
+          "2022": 67.5,
+          "2023": 66.5,
+          "2024": 65.8,
+          "2025": 65.19
+        },
+        "note": "2025 World Champion",
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Kate Douglass",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 24,
+        "pb": 65.19,
+        "sb": 65.27,
+        "hist": {
+          "2022": 67.2,
+          "2023": 66.5,
+          "2024": 65.8,
+          "2025": 65.27
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.975,
+        "h2h": {},
+        "birthYear": 2001
+      },
+      {
+        "name": "Tang Qianting",
+        "flag": "🇨🇳",
+        "country": "CHN",
+        "age": 22,
+        "pb": 65.64,
+        "sb": 65.64,
+        "hist": {
+          "2022": 67.8,
+          "2023": 67,
+          "2024": 66.2,
+          "2025": 65.64
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2003
+      },
+      {
+        "name": "Lilly King",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 29,
+        "pb": 63.46,
+        "sb": 66.02,
+        "hist": {
+          "2022": 64.8,
+          "2023": 64.3,
+          "2024": 64,
+          "2025": 66.02
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1996
+      },
+      {
+        "name": "Lara van Niekerk",
+        "flag": "🇿🇦",
+        "country": "RSA",
+        "age": 22,
+        "pb": 65.92,
+        "sb": 66.1,
+        "hist": {
+          "2022": 67,
+          "2023": 66.5,
+          "2024": 66.2,
+          "2025": 66.1
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2003
+      },
+      {
+        "name": "Benedetta Pilato",
+        "flag": "🇮🇹",
+        "country": "ITA",
+        "age": 20,
+        "pb": 65.24,
+        "sb": 65.8,
+        "hist": {
+          "2022": 66.5,
+          "2023": 65.8,
+          "2024": 65.5,
+          "2025": 65.8
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2005
+      },
+      {
+        "name": "Molly Hannis",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 32,
+        "pb": 66.23,
+        "sb": 67,
+        "hist": {
+          "2022": 67.4,
+          "2023": 67.2,
+          "2024": 67,
+          "2025": 67
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1993
+      },
+      {
+        "name": "Tatjana Schoenmaker",
+        "flag": "🇿🇦",
+        "country": "RSA",
+        "age": 28,
+        "pb": 65.22,
+        "sb": 66.5,
+        "hist": {
+          "2022": 66,
+          "2023": 66.5,
+          "2024": 66.8,
+          "2025": 66.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1997
+      }
+    ],
+    "W-Breast-200": [
+      {
+        "name": "Kate Douglass",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 24,
+        "pb": 138.5,
+        "sb": 138.5,
+        "hist": {
+          "2022": 143.8,
+          "2023": 142.8,
+          "2024": 141.8,
+          "2025": 138.5
+        },
+        "note": "2025 World Champion",
+        "active": true,
+        "retired": null,
+        "champsMult": 0.975,
+        "h2h": {},
+        "birthYear": 2001
+      },
+      {
+        "name": "Evgenia Chikunova",
+        "flag": "🇷🇺",
+        "country": "NAB",
+        "age": 20,
+        "pb": 139.64,
+        "sb": 139.96,
+        "hist": {
+          "2022": 141,
+          "2023": 140.7,
+          "2024": 140.5,
+          "2025": 139.96
+        },
+        "note": null,
+        "active": false,
+        "retired": null,
+        "inactiveNote": "Suspended/Ineligible",
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2005
+      },
+      {
+        "name": "Tatjana Schoenmaker",
+        "flag": "🇿🇦",
+        "country": "RSA",
+        "age": 28,
+        "pb": 138.95,
+        "sb": 140.5,
+        "hist": {
+          "2022": 139.5,
+          "2023": 140,
+          "2024": 140,
+          "2025": 140.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1997
+      },
+      {
+        "name": "Lilly King",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 29,
+        "pb": 139.92000000000002,
+        "sb": 141.45,
+        "hist": {
+          "2022": 141.3,
+          "2023": 141,
+          "2024": 140.8,
+          "2025": 141.45
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1996
+      },
+      {
+        "name": "Summer McIntosh",
+        "flag": "🇨🇦",
+        "country": "CAN",
+        "age": 19,
+        "pb": 140,
+        "sb": 141,
+        "hist": {
+          "2022": 142.5,
+          "2023": 141.5,
+          "2024": 141,
+          "2025": 141
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.972,
+        "h2h": {
+          "Katie Ledecky": {
+            "wins": 2,
+            "losses": 8
+          }
+        },
+        "birthYear": 2006
+      },
+      {
+        "name": "Benedetta Pilato",
+        "flag": "🇮🇹",
+        "country": "ITA",
+        "age": 20,
+        "pb": 141,
+        "sb": 141.5,
+        "hist": {
+          "2022": 143,
+          "2023": 142,
+          "2024": 141.5,
+          "2025": 141.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2005
+      },
+      {
+        "name": "Anna Egorova",
+        "flag": "🇷🇺",
+        "country": "ROC",
+        "age": 23,
+        "pb": 141.5,
+        "sb": 142,
+        "hist": {
+          "2022": 143.5,
+          "2023": 142.5,
+          "2024": 142,
+          "2025": 142
+        },
+        "note": null,
+        "active": false,
+        "retired": null,
+        "inactiveNote": "Suspended/Ineligible",
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Kaylene Corbett",
+        "flag": "🇿🇦",
+        "country": "RSA",
+        "age": 25,
+        "pb": 142.5,
+        "sb": 143.52,
+        "hist": {
+          "2022": 145,
+          "2023": 144,
+          "2024": 143.5,
+          "2025": 143.52
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2000
+      }
+    ],
+    "W-Fly-100": [
+      {
+        "name": "Gretchen Walsh",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 23,
+        "pb": 55.63,
+        "sb": 55.8,
+        "hist": {
+          "2022": 56.7,
+          "2023": 56.4,
+          "2024": 56.2,
+          "2025": 55.8
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.978,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Maggie Mac Neil",
+        "flag": "🇨🇦",
+        "country": "CAN",
+        "age": 25,
+        "pb": 55.59,
+        "sb": 55.9,
+        "hist": {
+          "2022": 56.3,
+          "2023": 56,
+          "2024": 55.9,
+          "2025": 55.9
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2000
+      },
+      {
+        "name": "Torrie Huske",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 23,
+        "pb": 55.62,
+        "sb": 55.95,
+        "hist": {
+          "2022": 56.4,
+          "2023": 56.1,
+          "2024": 55.95,
+          "2025": 55.95
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.978,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Sarah Sjostrom",
+        "flag": "🇸🇪",
+        "country": "SWE",
+        "age": 32,
+        "pb": 55.48,
+        "sb": 56,
+        "hist": {
+          "2022": 56.2,
+          "2023": 56.1,
+          "2024": 56,
+          "2025": 56
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.975,
+        "h2h": {},
+        "birthYear": 1993
+      },
+      {
+        "name": "Zhang Yufei",
+        "flag": "🇨🇳",
+        "country": "CHN",
+        "age": 26,
+        "pb": 55.64,
+        "sb": 56.1,
+        "hist": {
+          "2022": 56.5,
+          "2023": 56.2,
+          "2024": 56.1,
+          "2025": 56.1
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1999
+      },
+      {
+        "name": "Emma McKeon",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 31,
+        "pb": 55.96,
+        "sb": 56.4,
+        "hist": {
+          "2022": 56.4,
+          "2023": 56.5,
+          "2024": 56.6,
+          "2025": 56.4
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1994
+      },
+      {
+        "name": "Marie Wattel",
+        "flag": "🇫🇷",
+        "country": "FRA",
+        "age": 28,
+        "pb": 56.27,
+        "sb": 56.45,
+        "hist": {
+          "2022": 57,
+          "2023": 56.7,
+          "2024": 56.5,
+          "2025": 56.45
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1997
+      },
+      {
+        "name": "Louise Hansson",
+        "flag": "🇸🇪",
+        "country": "SWE",
+        "age": 28,
+        "pb": 56.32,
+        "sb": 56.6,
+        "hist": {
+          "2022": 57,
+          "2023": 56.8,
+          "2024": 56.7,
+          "2025": 56.6
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1997
+      }
+    ],
+    "W-Fly-200": [
+      {
+        "name": "Summer McIntosh",
+        "flag": "🇨🇦",
+        "country": "CAN",
+        "age": 19,
+        "pb": 121.99,
+        "sb": 121.99,
+        "hist": {
+          "2022": 125.5,
+          "2023": 124.2,
+          "2024": 123.8,
+          "2025": 121.99
+        },
+        "note": "2025 World Champion",
+        "active": true,
+        "retired": null,
+        "champsMult": 0.972,
+        "h2h": {
+          "Katie Ledecky": {
+            "wins": 2,
+            "losses": 8
+          }
+        },
+        "birthYear": 2006
+      },
+      {
+        "name": "Zhang Yufei",
+        "flag": "🇨🇳",
+        "country": "CHN",
+        "age": 26,
+        "pb": 123.86,
+        "sb": 124.2,
+        "hist": {
+          "2022": 125.8,
+          "2023": 124.8,
+          "2024": 124.5,
+          "2025": 124.2
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1999
+      },
+      {
+        "name": "Regan Smith",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 23,
+        "pb": 124.01,
+        "sb": 124.6,
+        "hist": {
+          "2022": 126,
+          "2023": 125,
+          "2024": 124.8,
+          "2025": 124.6
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.976,
+        "h2h": {
+          "Kaylee McKeown": {
+            "wins": 5,
+            "losses": 7
+          }
+        },
+        "birthYear": 2002
+      },
+      {
+        "name": "Hali Flickinger",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 31,
+        "pb": 125.26,
+        "sb": 125.8,
+        "hist": {
+          "2022": 126.8,
+          "2023": 126.2,
+          "2024": 126,
+          "2025": 125.8
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1994
+      },
+      {
+        "name": "Marie Wattel",
+        "flag": "🇫🇷",
+        "country": "FRA",
+        "age": 28,
+        "pb": 125.8,
+        "sb": 126.2,
+        "hist": {
+          "2022": 127.2,
+          "2023": 126.7,
+          "2024": 126.5,
+          "2025": 126.2
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1997
+      },
+      {
+        "name": "Suzuka Hasegawa",
+        "flag": "🇯🇵",
+        "country": "JPN",
+        "age": 25,
+        "pb": 125.9,
+        "sb": 126.4,
+        "hist": {
+          "2022": 127.5,
+          "2023": 127,
+          "2024": 126.8,
+          "2025": 126.4
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2000
+      },
+      {
+        "name": "Leah Smith",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 30,
+        "pb": 126.4,
+        "sb": 126.8,
+        "hist": {
+          "2022": 127.8,
+          "2023": 127.2,
+          "2024": 127,
+          "2025": 126.8
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1995
+      },
+      {
+        "name": "Lara van Niekerk",
+        "flag": "🇿🇦",
+        "country": "RSA",
+        "age": 22,
+        "pb": 127,
+        "sb": 127.5,
+        "hist": {
+          "2022": 129,
+          "2023": 128.5,
+          "2024": 128,
+          "2025": 127.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2003
+      }
+    ],
+    "W-IM-200": [
+      {
+        "name": "Summer McIntosh",
+        "flag": "🇨🇦",
+        "country": "CAN",
+        "age": 19,
+        "pb": 126.67,
+        "sb": 127.2,
+        "hist": {
+          "2022": 129,
+          "2023": 127.8,
+          "2024": 127.5,
+          "2025": 127.2
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.972,
+        "h2h": {
+          "Katie Ledecky": {
+            "wins": 2,
+            "losses": 8
+          }
+        },
+        "birthYear": 2006
+      },
+      {
+        "name": "Kate Douglass",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 24,
+        "pb": 126.95,
+        "sb": 127.5,
+        "hist": {
+          "2022": 129.2,
+          "2023": 128,
+          "2024": 127.8,
+          "2025": 127.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.975,
+        "h2h": {},
+        "birthYear": 2001
+      },
+      {
+        "name": "Alex Walsh",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 23,
+        "pb": 126.69,
+        "sb": 127.8,
+        "hist": {
+          "2022": 129,
+          "2023": 128.2,
+          "2024": 128,
+          "2025": 127.8
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Kaylee McKeown",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 24,
+        "pb": 128.17,
+        "sb": 128.4,
+        "hist": {
+          "2022": 129.5,
+          "2023": 128.8,
+          "2024": 128.5,
+          "2025": 128.4
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.972,
+        "h2h": {
+          "Regan Smith": {
+            "wins": 7,
+            "losses": 5
+          }
+        },
+        "birthYear": 2001
+      },
+      {
+        "name": "Yui Ohashi",
+        "flag": "🇯🇵",
+        "country": "JPN",
+        "age": 28,
+        "pb": 128.52,
+        "sb": 128.7,
+        "hist": {
+          "2022": 129.8,
+          "2023": 129,
+          "2024": 128.8,
+          "2025": 128.7
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1997
+      },
+      {
+        "name": "Emma Weyant",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 23,
+        "pb": 128.46,
+        "sb": 128.9,
+        "hist": {
+          "2022": 130,
+          "2023": 129.2,
+          "2024": 129,
+          "2025": 128.9
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Anastasia Gorbenko",
+        "flag": "🇮🇱",
+        "country": "ISR",
+        "age": 23,
+        "pb": 129,
+        "sb": 129.1,
+        "hist": {
+          "2022": 131,
+          "2023": 130,
+          "2024": 129.5,
+          "2025": 129.1
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Hali Flickinger",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 31,
+        "pb": 128.89,
+        "sb": 129.2,
+        "hist": {
+          "2022": 130.2,
+          "2023": 129.6,
+          "2024": 129.4,
+          "2025": 129.2
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1994
+      }
+    ],
+    "W-IM-400": [
+      {
+        "name": "Summer McIntosh",
+        "flag": "🇨🇦",
+        "country": "CAN",
+        "age": 19,
+        "pb": 265.87,
+        "sb": 266.5,
+        "hist": {
+          "2022": 270,
+          "2023": 268,
+          "2024": 267,
+          "2025": 266.5
+        },
+        "note": "2025 World Champion (4th gold)",
+        "active": true,
+        "retired": null,
+        "champsMult": 0.972,
+        "h2h": {
+          "Katie Ledecky": {
+            "wins": 2,
+            "losses": 8
+          }
+        },
+        "birthYear": 2006
+      },
+      {
+        "name": "Katie Grimes",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 20,
+        "pb": 268.53,
+        "sb": 269,
+        "hist": {
+          "2022": 271,
+          "2023": 270,
+          "2024": 269.5,
+          "2025": 269
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2005
+      },
+      {
+        "name": "Emma Weyant",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 23,
+        "pb": 269.17,
+        "sb": 269.8,
+        "hist": {
+          "2022": 271.5,
+          "2023": 270.5,
+          "2024": 270,
+          "2025": 269.8
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Yui Ohashi",
+        "flag": "🇯🇵",
+        "country": "JPN",
+        "age": 28,
+        "pb": 269.46,
+        "sb": 270.2,
+        "hist": {
+          "2022": 272,
+          "2023": 271,
+          "2024": 270.5,
+          "2025": 270.2
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1997
+      },
+      {
+        "name": "Alex Walsh",
+        "flag": "🇺🇸",
+        "country": "USA",
+        "age": 23,
+        "pb": 269.8,
+        "sb": 270.5,
+        "hist": {
+          "2022": 273,
+          "2023": 272,
+          "2024": 271.5,
+          "2025": 270.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Anastasia Gorbenko",
+        "flag": "🇮🇱",
+        "country": "ISR",
+        "age": 23,
+        "pb": 270.2,
+        "sb": 271,
+        "hist": {
+          "2022": 274,
+          "2023": 272.5,
+          "2024": 272,
+          "2025": 271
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 2002
+      },
+      {
+        "name": "Kaylee McKeown",
+        "flag": "🇦🇺",
+        "country": "AUS",
+        "age": 24,
+        "pb": 271,
+        "sb": 271.5,
+        "hist": {
+          "2022": 273.5,
+          "2023": 272.5,
+          "2024": 272,
+          "2025": 271.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 0.972,
+        "h2h": {
+          "Regan Smith": {
+            "wins": 7,
+            "losses": 5
+          }
+        },
+        "birthYear": 2001
+      },
+      {
+        "name": "Aimee Willmott",
+        "flag": "🇬🇧",
+        "country": "GBR",
+        "age": 32,
+        "pb": 271.74,
+        "sb": 272.5,
+        "hist": {
+          "2022": 274,
+          "2023": 273.5,
+          "2024": 273,
+          "2025": 272.5
+        },
+        "note": null,
+        "active": true,
+        "retired": null,
+        "champsMult": 1.0,
+        "h2h": {},
+        "birthYear": 1993
+      }
+    ]
+  }
+}

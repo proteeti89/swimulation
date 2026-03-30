@@ -6,17 +6,34 @@ const state = {
   cat:    'Freestyle',
   dist:   100,
   comp:   'World Aquatics Championships',
+  isChampionship: true,
   seed:   1,
 };
 
-// Expose for renderH2H access
 window._appState = state;
+
+/* ── Load athletes.json dynamically ─────────────────────────────────────────── */
+function loadAthletes() {
+  return fetch('js/data/athletes.json')
+    .then(r => r.json())
+    .then(data => {
+      window.ATHLETES = data.events;
+      window._athletesMeta = data.meta;
+      document.getElementById('dataVersion').textContent =
+        `Data: ${data.meta.lastUpdated} · v${data.meta.version}`;
+      return data;
+    })
+    .catch(() => {
+      // Fallback: ATHLETES already loaded via athletes.js <script> tag if JSON fails
+      console.warn('JSON load failed, using inline data');
+    });
+}
 
 /* ── Controls ───────────────────────────────────────────────────────────────── */
 function setGender(g) {
   state.gender = g;
   document.querySelectorAll('.gender-btn').forEach(b => {
-    b.classList.toggle('active', b.textContent.trim().startsWith(g === 'M' ? 'Men' : 'Women'));
+    b.classList.toggle('active', b.dataset.gender === g);
   });
   updateDistBtns();
   refresh();
@@ -25,12 +42,10 @@ function setGender(g) {
 function setCat(c) {
   state.cat = c;
   document.querySelectorAll('.cat-tab').forEach(b => {
-    b.classList.toggle('active', b.textContent.trim() === c ||
-      (c === 'IM' && b.textContent.includes('Medley')));
+    b.classList.toggle('active', b.dataset.cat === c);
   });
-  // Reset dist to first available
   const dists = EVENTS[c] || [];
-  state.dist = dists[0] || 100;
+  if (!dists.includes(state.dist)) state.dist = dists[0];
   updateDistBtns();
   refresh();
 }
@@ -46,7 +61,6 @@ function setDist(d) {
 function updateDistBtns() {
   const container = document.getElementById('distBtns');
   const dists = EVENTS[state.cat] || [];
-  // Ensure dist is valid
   if (!dists.includes(state.dist)) state.dist = dists[0];
   container.innerHTML = dists.map(d =>
     `<button class="dist-btn${d === state.dist ? ' active' : ''}" data-dist="${d}" onclick="setDist(${d})">${d}m</button>`
@@ -59,8 +73,15 @@ function regenerate() {
 }
 
 /* ── Competition selector ───────────────────────────────────────────────────── */
+const CHAMPS_EVENTS = new Set([
+  'World Aquatics Championships', 'Olympic Games',
+  'Pan Pacific Championships', 'European Aquatics Championships',
+  'Commonwealth Games',
+]);
+
 document.getElementById('compSelect').addEventListener('change', function () {
   state.comp = this.value;
+  state.isChampionship = CHAMPS_EVENTS.has(this.value);
   refresh();
 });
 
@@ -68,7 +89,7 @@ document.getElementById('compSelect').addEventListener('change', function () {
 function refresh() {
   const card = document.getElementById('leaderboardCard');
   card.classList.remove('animate-in');
-  void card.offsetWidth; // reflow
+  void card.offsetWidth;
   card.classList.add('animate-in');
 
   const sorted = renderLeaderboard(state);
@@ -81,6 +102,8 @@ function refresh() {
 
 /* ── Init ───────────────────────────────────────────────────────────────────── */
 (function init() {
-  updateDistBtns();
-  refresh();
+  loadAthletes().then(() => {
+    updateDistBtns();
+    refresh();
+  });
 })();

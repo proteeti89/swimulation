@@ -230,3 +230,51 @@ tbody td { padding: 12px 14px; vertical-align: middle; white-space: nowrap; }
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+
+/* ─── v2.0 New Styles ────────────────────────────────────────────────────────── */
+
+/* Header right */
+.header-right { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+.data-version { font-size: 0.65rem; color: var(--text-muted); }
+
+/* Championship performer badges */
+.champs-badge { font-size: 0.7rem; margin-left: 4px; vertical-align: middle; }
+.champs-elite  { color: #fbbf24; }
+.champs-good   { color: #94a3b8; }
+.champs-ok     { color: #cd7c40; }
+.champs-poor   { color: var(--red); }
+
+/* H2H historical record */
+.h2h-hist-record {
+  margin-top: 8px; font-size: 0.72rem; color: var(--teal);
+  font-weight: 600; padding: 4px 8px; background: rgba(6,182,212,0.08);
+  border-radius: 6px; border: 1px solid rgba(6,182,212,0.2);
+}
+
+/* Retired/inactive row */
+.retired-row td { padding: 8px 14px; }
+.retired-note {
+  font-size: 0.72rem; color: var(--text-muted);
+  background: rgba(239,68,68,0.05); border-top: 1px dashed var(--border);
+  font-style: italic;
+}
+.status-badge {
+  display: inline-block; font-size: 0.6rem; font-weight: 700;
+  padding: 1px 5px; border-radius: 4px; margin-left: 4px; vertical-align: middle;
+}
+.status-badge.retired { background: rgba(239,68,68,0.15); color: var(--red); border: 1px solid rgba(239,68,68,0.3); }
+
+/* Champs multiplier column */
+.champs-mult-cell { font-size: 0.75rem; font-family: monospace; color: var(--text-muted); text-align: right; }
+
+/* Model legend */
+.model-legend {
+  display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
+  padding: 8px 24px; background: var(--surface); border-bottom: 1px solid var(--border);
+  font-size: 0.72rem;
+}
+.legend-item { display: flex; align-items: center; gap: 4px; }
+.legend-sep { color: var(--border); }
+
+/* Age info in H2H */
+.h2h-age-note { font-size: 0.68rem; color: var(--text-muted); font-style: italic; }
