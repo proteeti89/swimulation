@@ -25,10 +25,12 @@ function statusBadge(athlete) {
   return '';
 }
 
-function wrBadge(time, eventKey) {
+function wrBadge(athlete, eventKey) {
   const wr = WORLD_RECORDS[eventKey];
   if (!wr) return '';
-  if (Math.abs(time - wr.time) < 0.05) return '<span class="wr-badge">WR</span>';
+  const t = athlete.predictedTime;
+  if (athlete._belowWR) return '<span class="wr-badge wr-threat" title="Predicted to break the World Record">⚡WR</span>';
+  if (Math.abs(t - wr.time) < 0.30) return '<span class="wr-badge wr-pace" title="World Record pace">≈WR</span>';
   return '';
 }
 
@@ -62,6 +64,23 @@ function renderLeaderboard(state) {
   const tbody = document.getElementById('leaderboardBody');
   tbody.innerHTML = '';
 
+  // World Record reference row
+  const wr = (typeof WORLD_RECORDS !== 'undefined') ? WORLD_RECORDS[key] : null;
+  if (wr) {
+    const wrRow = document.createElement('tr');
+    wrRow.className = 'wr-ref-row';
+    wrRow.innerHTML = `
+      <td class="pos-cell wr-ref-pos">WR</td>
+      <td>
+        <div class="athlete-name wr-ref-name">🌍 ${wr.holder}</div>
+        <div class="athlete-country">World Record · ${wr.year}</div>
+      </td>
+      <td><span class="pred-time wr-ref-time">${fmtTime(wr.time)}</span></td>
+      <td colspan="6" class="wr-ref-note">← benchmark · WR-caliber athletes may break this</td>
+    `;
+    tbody.appendChild(wrRow);
+  }
+
   sorted.forEach((a, idx) => {
     const rank = idx + 1;
     const posCls = rank === 1 ? 'pos-1' : rank === 2 ? 'pos-2' : rank === 3 ? 'pos-3' : 'pos-other';
@@ -69,7 +88,7 @@ function renderLeaderboard(state) {
     const p = probs[a.name] || { medal: '0', top8: '0' };
     const displayPct = rank <= 3 ? p.medal : p.top8;
     const trend = trendArrow(a);
-    const badge  = wrBadge(a.predictedTime, key);
+    const badge  = wrBadge(a, key);
     const champs = champsIndicator(a);
     const noteHtml = a.note
       ? `<span style="font-size:0.65rem;color:var(--text-muted);display:block;margin-top:2px">${a.note}</span>`

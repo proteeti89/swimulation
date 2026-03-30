@@ -161,6 +161,10 @@ function weightedScore(athlete, eventKey) {
 /* ── Single race prediction ─────────────────────────────────────────────────── */
 function predictRace(athletes, rng, eventKey, isChampionship) {
   const variance = getEventVariance(eventKey || 'M-Free-100');
+  // WR floor: predicted times cannot be faster than the world record
+  const wr = (typeof WORLD_RECORDS !== 'undefined') ? WORLD_RECORDS[eventKey] : null;
+  const wrFloor = wr ? wr.time : 0;
+
   return athletes
     .filter(a => a.active !== false) // exclude retired/inactive
     .map(a => {
@@ -168,7 +172,25 @@ function predictRace(athletes, rng, eventKey, isChampionship) {
       // Apply championship multiplier when at a major meet
       const champAdj = (isChampionship !== false) ? (a.champsMult || 1.0) : 1.0;
       const noiseVar = 1 + (rng() - 0.5) * variance * 2;
-      return { ...a, predictedTime: base * champAdj * noiseVar };
+      const raw = base * champAdj * noiseVar;
+      // Soft WR floor: WR-breaking is possible but must be earned by PB proximity.
+      // Athletes >2% off WR cannot break it. Athletes within 2% get dampened
+      // access — the closer their PB is to the WR, the further below they can go
+      // (max 0.5% improvement, e.g. McIntosh who holds WRs).
+      let predictedTime = raw;
+      if (wrFloor && raw < wrFloor) {
+        const pbGap = (a.pb - wrFloor) / wrFloor; // 0 = holds WR, 0.02 = 2% off
+        if (pbGap > 0.02) {
+          // Not WR-caliber: clamp hard at WR
+          predictedTime = wrFloor;
+        } else {
+          // WR-caliber athlete: allow improvement proportional to PB proximity.
+          // pbGap=0 (holds WR) → up to 0.5% below. pbGap=2% → no improvement.
+          const maxBelowFrac = 0.005 * (1 - pbGap / 0.02);
+          predictedTime = Math.max(raw, wrFloor * (1 - maxBelowFrac));
+        }
+      }
+      return { ...a, predictedTime, _belowWR: wrFloor && predictedTime < wrFloor };
     })
     .sort((a, b) => a.predictedTime - b.predictedTime);
 }

@@ -278,3 +278,45 @@ tbody td { padding: 12px 14px; vertical-align: middle; white-space: nowrap; }
 
 /* Age info in H2H */
 .h2h-age-note { font-size: 0.68rem; color: var(--text-muted); font-style: italic; }
+
+/* World Record reference row */
+.wr-ref-row {
+  background: linear-gradient(90deg, rgba(245,158,11,0.08) 0%, transparent 60%);
+  border-bottom: 2px solid rgba(245,158,11,0.3);
+}
+.wr-ref-pos {
+  color: var(--gold) !important;
+  font-size: 0.65rem !important;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+.wr-ref-name { color: var(--gold) !important; }
+.wr-ref-time {
+  color: var(--gold) !important;
+  font-weight: 700;
+}
+.wr-ref-note {
+  font-size: 0.68rem;
+  color: rgba(245,158,11,0.55);
+  font-style: italic;
+  padding-left: 8px !important;
+}
+
+/* WR badge variants */
+.wr-badge {
+  display: inline-block; font-size: 0.6rem; font-weight: 800;
+  padding: 1px 5px; border-radius: 4px; margin-left: 5px; vertical-align: middle;
+}
+.wr-threat {
+  background: rgba(245,158,11,0.2); color: var(--gold);
+  border: 1px solid rgba(245,158,11,0.5);
+  animation: pulse-wr 2s infinite;
+}
+.wr-pace {
+  background: rgba(245,158,11,0.1); color: rgba(245,158,11,0.75);
+  border: 1px solid rgba(245,158,11,0.25);
+}
+@keyframes pulse-wr {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
