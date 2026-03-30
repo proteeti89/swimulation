@@ -23,8 +23,8 @@ const CAT_ABBR = {
  * ─────────────────────────────────────────────────────────────────────────────*/
 const WORLD_RECORDS = {
   // ── Men ──────────────────────────────────────────────────────────────────
-  // 20.91 — César Cielo (BRA), Rome 2009 (super-suit era, still standing)
-  'M-Free-50':    { time: 20.91,  holder: 'César Cielo',        year: 2009 },
+  // 20.88 — Cameron McEvoy (AUS), China Open Shenzhen, March 2026 (broke Cielo's 17-year super-suit record)
+  'M-Free-50':    { time: 20.88,  holder: 'Cameron McEvoy',     year: 2026 },
   // 46.40 — Pan Zhanle (CHN), Paris Olympics 2024
   'M-Free-100':   { time: 46.40,  holder: 'Pan Zhanle',         year: 2024 },
   // 1:42.00 — Paul Biedermann (GER), Rome 2009 (super-suit)
@@ -45,8 +45,8 @@ const WORLD_RECORDS = {
   'M-Breast-200': { time: 125.95, holder: 'Zac Stubblety-Cook', year: 2022 },
   // 49.45 — Caeleb Dressel (USA), Tokyo Olympics 2021
   'M-Fly-100':    { time: 49.45,  holder: 'Caeleb Dressel',     year: 2021 },
-  // 1:51.51 — Michael Phelps (USA), Rome 2009 (super-suit)
-  'M-Fly-200':    { time: 111.51, holder: 'Michael Phelps',     year: 2009 },
+  // 1:50.34 — Kristóf Milák (HUN), Budapest 2022
+  'M-Fly-200':    { time: 110.34, holder: 'Kristóf Milák',      year: 2022 },
   // 1:52.69 — Léon Marchand (FRA), Singapore 2025
   'M-IM-200':     { time: 112.69, holder: 'Léon Marchand',      year: 2025 },
   // 4:02.50 — Léon Marchand (FRA), Fukuoka 2023
@@ -65,14 +65,14 @@ const WORLD_RECORDS = {
   'W-Free-800':   { time: 484.12, holder: 'Katie Ledecky',      year: 2025 },
   // 15:20.48 — Katie Ledecky (USA), Indianapolis 2018
   'W-Free-1500':  { time: 920.48, holder: 'Katie Ledecky',      year: 2018 },
-  // 57.16 — Kaylee McKeown (AUS), 2025
-  'W-Back-100':   { time: 57.16,  holder: 'Kaylee McKeown',     year: 2025 },
-  // 2:02.05 — Regan Smith (USA), Gwangju 2019
-  'W-Back-200':   { time: 122.05, holder: 'Regan Smith',        year: 2019 },
+  // 57.13 — Regan Smith (USA), US Olympic Trials 2024
+  'W-Back-100':   { time: 57.13,  holder: 'Regan Smith',        year: 2024 },
+  // 2:03.14 — Kaylee McKeown (AUS), 2023
+  'W-Back-200':   { time: 123.14, holder: 'Kaylee McKeown',     year: 2023 },
   // 1:04.13 — Lilly King (USA), Budapest 2017
   'W-Breast-100': { time: 64.13,  holder: 'Lilly King',         year: 2017 },
-  // 2:18.95 — Tatjana Schoenmaker (RSA), Tokyo Olympics 2021
-  'W-Breast-200': { time: 138.95, holder: 'Tatjana Schoenmaker', year: 2021 },
+  // 2:17.55 — Evgeniia Chikunova (RUS), Russian Championships 2023
+  'W-Breast-200': { time: 137.55, holder: 'Evgeniia Chikunova', year: 2023 },
   // 54.60 — Gretchen Walsh (USA), TYR Pro Swim Fort Lauderdale 2025
   'W-Fly-100':    { time: 54.60,  holder: 'Gretchen Walsh',     year: 2025 },
   // 2:01.81 — Liu Zige (CHN), Rome 2009 (super-suit)
