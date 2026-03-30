@@ -17,34 +17,68 @@ const CAT_ABBR = {
   IM:           'IM',
 };
 
-/* ─── World Records (as of early 2026) ─────────────────────────────────────── */
+/* ─── World Records (long course / 50m pool, verified as of March 2026) ────────
+ * Sources: World Aquatics official records, SwimSwam, olympics.com
+ * All times in decimal seconds. mm:ss.xx → (m*60)+ss.xx
+ * ─────────────────────────────────────────────────────────────────────────────*/
 const WORLD_RECORDS = {
-  'M-Free-50':    { time: 20.91, holder: 'César Cielo', year: 2009 },
-  'M-Free-100':   { time: 46.40, holder: 'Pan Zhanle',  year: 2024 },
-  'M-Free-200':   { time: 102.00, holder: 'Paul Biedermann', year: 2009 },
-  'M-Free-400':   { time: 220.07, holder: 'Paul Biedermann', year: 2009 },
-  'M-Free-800':   { time: 454.04, holder: 'Zhang Lin',  year: 2009 },
-  'M-Free-1500':  { time: 870.21, holder: 'Sun Yang',   year: 2012 },
-  'M-Back-100':   { time: 51.60,  holder: 'Thomas Ceccon', year: 2022 },
-  'M-Back-200':   { time: 113.59, holder: 'Evgeny Rylov', year: 2021 },
-  'M-Breast-100': { time: 56.88, holder: 'Adam Peaty',  year: 2019 },
+  // ── Men ──────────────────────────────────────────────────────────────────
+  // 20.91 — César Cielo (BRA), Rome 2009 (super-suit era, still standing)
+  'M-Free-50':    { time: 20.91,  holder: 'César Cielo',        year: 2009 },
+  // 46.40 — Pan Zhanle (CHN), Paris Olympics 2024
+  'M-Free-100':   { time: 46.40,  holder: 'Pan Zhanle',         year: 2024 },
+  // 1:42.00 — Paul Biedermann (GER), Rome 2009 (super-suit)
+  'M-Free-200':   { time: 102.00, holder: 'Paul Biedermann',    year: 2009 },
+  // 3:39.96 — Lukas Märtens (GER), Stockholm Open 2025
+  'M-Free-400':   { time: 219.96, holder: 'Lukas Märtens',      year: 2025 },
+  // 7:32.12 — Zhang Lin (CHN), Rome 2009 (super-suit)
+  'M-Free-800':   { time: 452.12, holder: 'Zhang Lin',          year: 2009 },
+  // 14:31.02 — Sun Yang (CHN), London Olympics 2012
+  'M-Free-1500':  { time: 871.02, holder: 'Sun Yang',           year: 2012 },
+  // 51.60 — Thomas Ceccon (ITA), Budapest 2022
+  'M-Back-100':   { time: 51.60,  holder: 'Thomas Ceccon',      year: 2022 },
+  // 1:53.27 — Evgeny Rylov (ROC), Tokyo Olympics 2021
+  'M-Back-200':   { time: 113.27, holder: 'Evgeny Rylov',       year: 2021 },
+  // 56.88 — Adam Peaty (GBR), Gwangju 2019
+  'M-Breast-100': { time: 56.88,  holder: 'Adam Peaty',         year: 2019 },
+  // 2:05.95 — Zac Stubblety-Cook (AUS), Budapest 2022
   'M-Breast-200': { time: 125.95, holder: 'Zac Stubblety-Cook', year: 2022 },
-  'M-Fly-100':    { time: 49.45, holder: 'Caeleb Dressel', year: 2021 },
-  'M-Fly-200':    { time: 111.51, holder: 'Michael Phelps', year: 2009 },
-  'M-IM-200':     { time: 112.69, holder: 'Leon Marchand', year: 2024 },
-  'M-IM-400':     { time: 243.36, holder: 'Leon Marchand', year: 2023 },
-  'W-Free-50':    { time: 23.67, holder: 'Sarah Sjöström', year: 2017 },
-  'W-Free-100':   { time: 51.71, holder: 'Sarah Sjöström', year: 2017 },
-  'W-Free-200':   { time: 112.98, holder: 'Federica Pellegrini', year: 2009 },
-  'W-Free-400':   { time: 235.54, holder: 'Katie Ledecky', year: 2016 },
-  'W-Free-800':   { time: 483.36, holder: 'Katie Ledecky', year: 2016 },
-  'W-Free-1500':  { time: 924.16, holder: 'Katie Ledecky', year: 2018 },
-  'W-Back-100':   { time: 57.16, holder: 'Kaylee McKeown', year: 2025 },
-  'W-Back-200':   { time: 122.05, holder: 'Regan Smith', year: 2019 },
-  'W-Breast-100': { time: 64.13, holder: 'Lilly King',  year: 2017 },
-  'W-Breast-200': { time: 138.35, holder: 'Tatjana Schoenmaker', year: 2021 },
-  'W-Fly-100':    { time: 55.48, holder: 'Sarah Sjöström', year: 2016 },
-  'W-Fly-200':    { time: 121.81, holder: 'Liu Zige',    year: 2009 },
-  'W-IM-200':     { time: 126.12, holder: 'Katinka Hosszu', year: 2015 },
-  'W-IM-400':     { time: 271.50, holder: 'Katinka Hosszu', year: 2016 },
+  // 49.45 — Caeleb Dressel (USA), Tokyo Olympics 2021
+  'M-Fly-100':    { time: 49.45,  holder: 'Caeleb Dressel',     year: 2021 },
+  // 1:51.51 — Michael Phelps (USA), Rome 2009 (super-suit)
+  'M-Fly-200':    { time: 111.51, holder: 'Michael Phelps',     year: 2009 },
+  // 1:52.69 — Léon Marchand (FRA), Singapore 2025
+  'M-IM-200':     { time: 112.69, holder: 'Léon Marchand',      year: 2025 },
+  // 4:02.50 — Léon Marchand (FRA), Fukuoka 2023
+  'M-IM-400':     { time: 242.50, holder: 'Léon Marchand',      year: 2023 },
+
+  // ── Women ────────────────────────────────────────────────────────────────
+  // 23.67 — Sarah Sjöström (SWE), Budapest 2017
+  'W-Free-50':    { time: 23.67,  holder: 'Sarah Sjöström',     year: 2017 },
+  // 51.71 — Sarah Sjöström (SWE), Budapest 2017
+  'W-Free-100':   { time: 51.71,  holder: 'Sarah Sjöström',     year: 2017 },
+  // 1:49.77 — Mollie O'Callaghan (AUS), Singapore 2025 (first sub-1:50)
+  'W-Free-200':   { time: 109.77, holder: "Mollie O'Callaghan", year: 2025 },
+  // 3:54.18 — Summer McIntosh (CAN), Canadian Trials 2025
+  'W-Free-400':   { time: 234.18, holder: 'Summer McIntosh',    year: 2025 },
+  // 8:04.12 — Katie Ledecky (USA), TYR Pro Swim Fort Lauderdale 2025
+  'W-Free-800':   { time: 484.12, holder: 'Katie Ledecky',      year: 2025 },
+  // 15:20.48 — Katie Ledecky (USA), Indianapolis 2018
+  'W-Free-1500':  { time: 920.48, holder: 'Katie Ledecky',      year: 2018 },
+  // 57.16 — Kaylee McKeown (AUS), 2025
+  'W-Back-100':   { time: 57.16,  holder: 'Kaylee McKeown',     year: 2025 },
+  // 2:02.05 — Regan Smith (USA), Gwangju 2019
+  'W-Back-200':   { time: 122.05, holder: 'Regan Smith',        year: 2019 },
+  // 1:04.13 — Lilly King (USA), Budapest 2017
+  'W-Breast-100': { time: 64.13,  holder: 'Lilly King',         year: 2017 },
+  // 2:18.95 — Tatjana Schoenmaker (RSA), Tokyo Olympics 2021
+  'W-Breast-200': { time: 138.95, holder: 'Tatjana Schoenmaker', year: 2021 },
+  // 54.60 — Gretchen Walsh (USA), TYR Pro Swim Fort Lauderdale 2025
+  'W-Fly-100':    { time: 54.60,  holder: 'Gretchen Walsh',     year: 2025 },
+  // 2:01.81 — Liu Zige (CHN), Rome 2009 (super-suit)
+  'W-Fly-200':    { time: 121.81, holder: 'Liu Zige',           year: 2009 },
+  // 2:05.70 — Summer McIntosh (CAN), Canadian Trials 2025
+  'W-IM-200':     { time: 125.70, holder: 'Summer McIntosh',    year: 2025 },
+  // 4:23.65 — Summer McIntosh (CAN), Canadian Trials 2025
+  'W-IM-400':     { time: 263.65, holder: 'Summer McIntosh',    year: 2025 },
 };
