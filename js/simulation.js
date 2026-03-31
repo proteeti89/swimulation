@@ -158,9 +158,29 @@ function weightedScore(athlete, eventKey) {
   return (baseTime + consAdj + trendAdj) * ageMult;
 }
 
+/* ── Championship multiplier, distance-scaled ───────────────────────────────────
+ * champsMult was calibrated for sprint events (~100m). A 2.5% "champs boost"
+ * = ~1.3s on a 52s swim — plausible. The same 2.5% on an 8-min swim = 12s —
+ * absurd. Scale factors keep absolute championship gains sport-realistic:
+ *   Sprint adrenaline/taper benefits fade sharply over longer distances.
+ *   50/100m: full  200m: 75%  400m: 50%  800m: 7%  1500m: 5%
+ * At 7% the maximum boost for a distance swimmer (champsMult 0.97) is ~1s
+ * over 8 minutes — which matches observed real-world championship gains.
+ */
+function scaleChampsMult(champsMult, dist) {
+  const effect = champsMult - 1.0; // negative = goes faster at champs
+  const scale = dist <= 100  ? 1.00
+              : dist <= 200  ? 0.75
+              : dist <= 400  ? 0.50
+              : dist <= 800  ? 0.07   // ~1s max on 8min swim
+              :                0.05;  // ~1s max on 15min swim
+  return 1.0 + effect * scale;
+}
+
 /* ── Single race prediction ─────────────────────────────────────────────────── */
 function predictRace(athletes, rng, eventKey, isChampionship) {
   const variance = getEventVariance(eventKey || 'M-Free-100');
+  const dist = parseInt((eventKey || 'M-Free-100').split('-').pop(), 10);
   // WR floor: predicted times cannot be faster than the world record
   const wr = (typeof WORLD_RECORDS !== 'undefined') ? WORLD_RECORDS[eventKey] : null;
   const wrFloor = wr ? wr.time : 0;
@@ -169,24 +189,29 @@ function predictRace(athletes, rng, eventKey, isChampionship) {
     .filter(a => a.active !== false) // exclude retired/inactive
     .map(a => {
       const base = weightedScore(a, eventKey);
-      // Apply championship multiplier when at a major meet
-      const champAdj = (isChampionship !== false) ? (a.champsMult || 1.0) : 1.0;
+      // Apply championship multiplier (distance-scaled) when at a major meet
+      const champAdj = (isChampionship !== false)
+        ? scaleChampsMult(a.champsMult || 1.0, dist)
+        : 1.0;
       const noiseVar = 1 + (rng() - 0.5) * variance * 2;
       const raw = base * champAdj * noiseVar;
-      // Soft WR floor: WR-breaking is possible but must be earned by PB proximity.
-      // Athletes >2% off WR cannot break it. Athletes within 2% get dampened
-      // access — the closer their PB is to the WR, the further below they can go
-      // (max 0.5% improvement, e.g. McIntosh who holds WRs).
+      // Soft WR floor: WR-breaking is possible but tightly constrained.
+      // Max improvement below WR scales with PB proximity AND event distance.
+      // For sprints: up to 0.2% below WR for WR holders (e.g. Pan Zhanle ~0.09s).
+      // For distance: capped at 0.05% below WR — a 3-second improvement on 8min
+      // is exceptional; 8:01 in the 800m free is genuinely a reach.
       let predictedTime = raw;
       if (wrFloor && raw < wrFloor) {
         const pbGap = (a.pb - wrFloor) / wrFloor; // 0 = holds WR, 0.02 = 2% off
         if (pbGap > 0.02) {
-          // Not WR-caliber: clamp hard at WR
-          predictedTime = wrFloor;
+          predictedTime = wrFloor; // not WR-caliber: hard clamp
         } else {
-          // WR-caliber athlete: allow improvement proportional to PB proximity.
-          // pbGap=0 (holds WR) → up to 0.5% below. pbGap=2% → no improvement.
-          const maxBelowFrac = 0.005 * (1 - pbGap / 0.02);
+          // Distance events get a much tighter ceiling on WR improvement
+          const distCapFrac = dist <= 200  ? 0.0020
+                            : dist <= 400  ? 0.0010
+                            : dist <= 800  ? 0.0004  // ~0.2s on 8min swim
+                            :                0.0003; // ~0.3s on 15min swim
+          const maxBelowFrac = distCapFrac * (1 - pbGap / 0.02);
           predictedTime = Math.max(raw, wrFloor * (1 - maxBelowFrac));
         }
       }
@@ -237,8 +262,9 @@ function h2hProb(a1, a2, runs, eventKey) {
   for (let i = 0; i < runs; i++) {
     const rng      = makeRng(seedBase + i * 6271);
     const variance = getEventVariance(eventKey || 'M-Free-100');
-    const champ1   = a1.champsMult || 1.0;
-    const champ2   = a2.champsMult || 1.0;
+    const dist2    = parseInt((eventKey || 'M-Free-100').split('-').pop(), 10);
+    const champ1   = scaleChampsMult(a1.champsMult || 1.0, dist2);
+    const champ2   = scaleChampsMult(a2.champsMult || 1.0, dist2);
     const age1     = ageCurveMultiplier(a1, eventKey || 'M-Free-100');
     const age2     = ageCurveMultiplier(a2, eventKey || 'M-Free-100');
     const base1    = weightedScore(a1, eventKey) * champ1 * age1;
