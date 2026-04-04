@@ -1,6 +1,17 @@
 /* ─── Render Engine v2.0 ────────────────────────────────────────────────────── */
 'use strict';
 
+/* ── Championship year markers ───────────────────────────────────────────────
+ * Key years and the major championship that took place in them.
+ * These are shown as small star/medal markers above form bars.
+ */
+const CHAMPS_YEAR_LABEL = {
+  2022: { icon: '🌍', tip: '2022 Worlds (Budapest)' },
+  2023: { icon: '🌍', tip: '2023 Worlds (Fukuoka)' },
+  2024: { icon: '🥇', tip: '2024 Olympics (Paris)' },
+  2025: { icon: '🌍', tip: '2025 Worlds (Singapore)' },
+};
+
 /* ── Medal probability bar ──────────────────────────────────────────────────── */
 function probBar(pct, rank) {
   const cls = rank === 1 ? 'prob-bar-gold'
@@ -98,7 +109,11 @@ function renderLeaderboard(state) {
     tr.innerHTML = `
       <td class="pos-cell ${posCls}">${posLabel}</td>
       <td>
-        <div class="athlete-name">${a.flag} ${a.name}${badge}${champs}</div>
+        <div class="athlete-name">
+          <span class="athlete-name-link" onclick="openProfile('${a.name.replace(/'/g,"\\'")}')">
+            ${a.flag} ${a.name}
+          </span>${badge}${champs}
+        </div>
         <div class="athlete-country">${a.country}${noteHtml}</div>
       </td>
       <td><span class="pred-time">${fmtTime(a.predictedTime)}</span></td>
@@ -140,7 +155,7 @@ function renderFormCharts(sorted) {
 
   top5.forEach(a => {
     const hist = a.hist || {};
-    const years = [2022, 2023, 2024, 2025];
+    const years = [2022, 2023, 2024, 2025, 2026];
     const times = years.map(y => hist[y] || null);
     const validTimes = times.filter(Boolean);
     if (!validTimes.length) return;
@@ -151,15 +166,24 @@ function renderFormCharts(sorted) {
 
     const barsHtml = years.map((y, i) => {
       const t = times[i];
-      if (!t) return `<div class="form-year-col">
+      const champInfo = CHAMPS_YEAR_LABEL[y];
+      if (!t) return `<div class="form-year-col" style="margin-top:14px">
         <div class="form-bar" style="height:0"></div>
         <div class="form-year-label">${y}</div>
         <div class="form-time-label">—</div></div>`;
       const heightPct = 20 + ((maxT - t) / range) * 80;
-      const hue = 180 + (i / 3) * 40;
+      // Championship years get a gold tint; 2026 gets a teal tint (current season)
+      const isChamp = !!champInfo;
+      const is2026  = y === 2026;
+      const hue = isChamp ? 42 : is2026 ? 185 : 180 + (i / 5) * 30;
+      const sat = isChamp ? 90 : 80;
+      const starHtml = champInfo
+        ? `<span class="champs-star" title="${champInfo.tip}">${champInfo.icon}</span>`
+        : '';
       return `
-        <div class="form-year-col">
-          <div class="form-bar" style="height:${heightPct}%;background:hsl(${hue},80%,48%)"></div>
+        <div class="form-year-col" style="margin-top:14px">
+          ${starHtml}
+          <div class="form-bar" style="height:${heightPct}%;background:hsl(${hue},${sat}%,${isChamp?52:48}%)${isChamp?' box-shadow:0 0 4px rgba(245,158,11,0.3)':''}"></div>
           <div class="form-year-label">${y}</div>
           <div class="form-time-label">${fmtTime(t)}</div>
         </div>`;
@@ -169,12 +193,28 @@ function renderFormCharts(sorted) {
     const div = document.createElement('div');
     div.className = 'form-athlete';
     div.innerHTML = `
-      <div class="form-athlete-name">${a.flag} ${a.name} <span class="${trend.cls}" style="font-size:0.8rem">${trend.symbol}</span></div>
+      <div class="form-athlete-name">
+        <span class="athlete-name-link" onclick="openProfile('${a.name.replace(/'/g,"\\'")}')">
+          ${a.flag} ${a.name}
+        </span>
+        <span class="${trend.cls}" style="font-size:0.8rem">${trend.symbol}</span>
+      </div>
       <div class="form-athlete-country">${a.country} · Age ${a.age} · Champs: ${champsIndicator(a) || '—'}</div>
       <div class="form-bars">${barsHtml}</div>
     `;
     container.appendChild(div);
   });
+
+  // Championship legend
+  const legend = document.createElement('div');
+  legend.className = 'form-champs-legend';
+  legend.innerHTML = `
+    <span>🌍 World Championships</span>
+    <span>🥇 Olympic Games</span>
+    <span style="color:hsl(185,80%,48%)">■ 2026 current season</span>
+    <span>Gold bars = championship year performance</span>
+  `;
+  container.appendChild(legend);
 }
 
 /* ── Head-to-Head Panel ───────────────────────────────────────────────────────── */
@@ -273,3 +313,144 @@ function renderH2H() {
     </div>
   `;
 }
+
+/* ─── Athlete Profile Modal ──────────────────────────────────────────────────── */
+
+/* Build a human-readable event label from an ATHLETES key  (e.g. "W-Free-100") */
+function eventKeyLabel(key) {
+  const parts = key.split('-');
+  const g = parts[0] === 'M' ? "Men's" : "Women's";
+  const strMap = { Free: 'Freestyle', Back: 'Backstroke', Breast: 'Breaststroke', Fly: 'Butterfly', IM: 'Ind. Medley' };
+  const stroke = strMap[parts[1]] || parts[1];
+  const dist   = parts[2];
+  return `${g} ${dist}m ${stroke}`;
+}
+
+/* Find every event an athlete competes in and return {key, eventLabel, athlete} pairs */
+function findAthleteEvents(name) {
+  const results = [];
+  for (const [key, list] of Object.entries(ATHLETES)) {
+    const a = list.find(x => x.name === name);
+    if (a) results.push({ key, label: eventKeyLabel(key), athlete: a });
+  }
+  // Sort: women before men, freestyle first
+  const order = ['Free', 'Back', 'Breast', 'Fly', 'IM'];
+  results.sort((a, b) => {
+    const ap = a.key, bp = b.key;
+    if (ap[0] !== bp[0]) return ap[0] === 'W' ? -1 : 1;
+    const ai = order.indexOf(ap.split('-')[1]);
+    const bi = order.indexOf(bp.split('-')[1]);
+    if (ai !== bi) return ai - bi;
+    return parseInt(ap.split('-')[2]) - parseInt(bp.split('-')[2]);
+  });
+  return results;
+}
+
+/* Mini horizontal form bar strip for the profile event rows */
+function miniFormBars(hist) {
+  const years = [2022, 2023, 2024, 2025, 2026];
+  const times = years.map(y => hist[y] || null);
+  const valid  = times.filter(Boolean);
+  if (!valid.length) return '';
+  const minT = Math.min(...valid), maxT = Math.max(...valid);
+  const range = maxT - minT || 1;
+  return years.map((y, i) => {
+    const t = times[i];
+    if (!t) return `<div class="profile-mini-bar-col"><div class="profile-mini-bar" style="height:0px;background:transparent"></div><div class="profile-mini-year">${y}</div></div>`;
+    const h = 8 + Math.round(((maxT - t) / range) * 28);
+    const isChamp = !!CHAMPS_YEAR_LABEL[y];
+    const is2026  = y === 2026;
+    const bg = isChamp ? 'hsl(42,90%,52%)' : is2026 ? 'hsl(185,80%,48%)' : `hsl(${185 + i * 8},75%,46%)`;
+    return `<div class="profile-mini-bar-col"><div class="profile-mini-bar" style="height:${h}px;background:${bg}"></div><div class="profile-mini-year">${String(y).slice(2)}</div></div>`;
+  }).join('');
+}
+
+function openProfile(name) {
+  const events = findAthleteEvents(name);
+  if (!events.length) return;
+
+  const first = events[0].athlete;
+
+  /* Header */
+  document.getElementById('profileName').textContent = `${first.flag} ${name}`;
+  document.getElementById('profileMeta').textContent =
+    `${first.country} · Age ${first.age}${first.note ? ' · ' + first.note : ''}`;
+
+  /* Stat chips */
+  const trend  = trendArrow(first);
+  const champsHtml = champsIndicator(first) || '<span style="color:var(--text-muted)">neutral</span>';
+  const chips = [
+    { label: 'Age', val: first.age },
+    { label: 'Trend', val: `<span class="${trend.cls}">${trend.symbol} ${trend.cls === 'trend-up' ? 'Improving' : trend.cls === 'trend-down' ? 'Declining' : 'Stable'}</span>` },
+    { label: 'Champs', val: champsHtml },
+    { label: 'Events', val: events.length },
+  ].map(c => `<div class="profile-stat-chip"><div class="chip-label">${c.label}</div><div class="chip-val">${c.val}</div></div>`).join('');
+
+  /* Event rows */
+  const rows = events.map(({ key, label, athlete: a }) => {
+    const mini = miniFormBars(a.hist || {});
+    const trend2 = trendArrow(a);
+    return `
+      <div class="profile-event-row" onclick="jumpToEvent('${key}')" title="Jump to ${label}">
+        <div class="profile-event-name">${label}</div>
+        <div class="profile-event-times">
+          <div><div class="profile-time-label">PB</div><strong>${fmtTime(a.pb)}</strong></div>
+          <div><div class="profile-time-label">SB '26</div><strong style="color:var(--teal)">${fmtTime(a.sb)}</strong></div>
+        </div>
+        <div class="profile-mini-bars">${mini}</div>
+        <span class="${trend2.cls}" style="font-size:0.9rem;margin-left:4px">${trend2.symbol}</span>
+      </div>`;
+  }).join('');
+
+  /* H2H records if present */
+  const h2hEntries = Object.entries(first.h2h || {});
+  const h2hSection = h2hEntries.length ? `
+    <div class="profile-events-title" style="margin-top:18px">Head-to-Head Records</div>
+    ${h2hEntries.map(([opp, rec]) => {
+      const tot = rec.wins + rec.losses;
+      const pct = tot ? Math.round(rec.wins / tot * 100) : 0;
+      return `<div class="profile-event-row" style="cursor:default">
+        <div class="profile-event-name">vs ${opp}</div>
+        <div class="profile-event-times">
+          <div><div class="profile-time-label">Record</div><strong>${rec.wins}W – ${rec.losses}L</strong></div>
+          <div><div class="profile-time-label">Win%</div><strong style="color:${pct>60?'var(--green)':pct<40?'var(--red)':'var(--text)'}">${pct}%</strong></div>
+        </div>
+      </div>`;
+    }).join('')}` : '';
+
+  document.getElementById('profileContent').innerHTML = `
+    <div class="profile-stats">${chips}</div>
+    <div class="profile-events-title">Events (${events.length})</div>
+    ${rows}
+    ${h2hSection}
+    <div style="font-size:0.65rem;color:var(--text-muted);margin-top:16px;text-align:center">
+      Click any event row to navigate to it. Gold bars = championship year. Teal bar = 2026.
+    </div>
+  `;
+
+  document.getElementById('profileModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeProfile() {
+  document.getElementById('profileModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+/* Jump to a specific event from inside the profile modal */
+function jumpToEvent(key) {
+  closeProfile();
+  const parts = key.split('-');
+  const gender = parts[0];
+  const strokeMap = { Free: 'Freestyle', Back: 'Backstroke', Breast: 'Breaststroke', Fly: 'Butterfly', IM: 'IM' };
+  const cat  = strokeMap[parts[1]] || parts[1];
+  const dist = parseInt(parts[2]);
+  if (typeof setGender === 'function') setGender(gender);
+  if (typeof setCat    === 'function') setCat(cat);
+  if (typeof setDist   === 'function') setDist(dist);
+}
+
+/* Close on Escape key */
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeProfile();
+});

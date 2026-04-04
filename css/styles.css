@@ -302,6 +302,85 @@ tbody td { padding: 12px 14px; vertical-align: middle; white-space: nowrap; }
   padding-left: 8px !important;
 }
 
+/* ─── Athlete Profile Modal ──────────────────────────────────────────────────── */
+.modal-overlay {
+  position: fixed; inset: 0; z-index: 1000;
+  background: rgba(0,0,0,0.75); backdrop-filter: blur(4px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 20px; opacity: 0; pointer-events: none; transition: opacity 0.2s;
+}
+.modal-overlay.open { opacity: 1; pointer-events: all; }
+.modal-box {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 14px; width: 100%; max-width: 760px;
+  max-height: 88vh; overflow-y: auto;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.6);
+  animation: modalIn 0.22s ease;
+}
+@keyframes modalIn {
+  from { transform: translateY(14px) scale(0.97); opacity: 0; }
+  to   { transform: translateY(0) scale(1); opacity: 1; }
+}
+.modal-header {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  padding: 20px 22px 16px; border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; z-index: 1;
+  background: var(--surface);
+}
+.modal-athlete-name { font-size: 1.4rem; font-weight: 800; }
+.modal-athlete-meta { font-size: 0.8rem; color: var(--text-muted); margin-top: 3px; }
+.modal-close {
+  background: var(--surface2); border: 1px solid var(--border);
+  color: var(--text-muted); width: 32px; height: 32px; border-radius: 8px;
+  cursor: pointer; font-size: 1rem; display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; transition: all 0.15s;
+}
+.modal-close:hover { color: var(--text); border-color: var(--text-muted); }
+.modal-body { padding: 20px 22px; }
+.profile-stats { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 22px; }
+.profile-stat-chip {
+  background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 8px; padding: 8px 14px; font-size: 0.8rem;
+}
+.profile-stat-chip .chip-label {
+  color: var(--text-muted); font-size: 0.68rem; text-transform: uppercase;
+  letter-spacing: 0.04em; margin-bottom: 2px;
+}
+.profile-stat-chip .chip-val { font-weight: 700; font-family: monospace; }
+.profile-events-title {
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--teal); margin-bottom: 12px;
+  display: flex; align-items: center; gap: 8px;
+}
+.profile-events-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+.profile-event-row {
+  display: flex; align-items: center; gap: 12px; padding: 10px 12px;
+  background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 9px; margin-bottom: 8px; cursor: pointer; transition: border-color 0.15s;
+}
+.profile-event-row:hover { border-color: var(--teal); }
+.profile-event-name { font-size: 0.82rem; font-weight: 700; min-width: 140px; }
+.profile-event-times { display: flex; gap: 18px; font-family: monospace; font-size: 0.8rem; }
+.profile-time-label { color: var(--text-muted); font-family: sans-serif; font-size: 0.68rem; }
+.profile-mini-bars { display: flex; align-items: flex-end; gap: 3px; height: 40px; margin-left: auto; }
+.profile-mini-bar-col { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.profile-mini-bar { width: 13px; border-radius: 2px 2px 0 0; }
+.profile-mini-year { font-size: 0.5rem; color: var(--text-muted); }
+.athlete-name-link { cursor: pointer; transition: color 0.15s; display: inline; }
+.athlete-name-link:hover { color: var(--teal); text-decoration: underline; text-underline-offset: 2px; }
+
+/* ─── Form chart: championship year markers ─────────────────────────────────── */
+.form-year-col { position: relative; }
+.champs-star {
+  position: absolute; top: -15px; left: 50%; transform: translateX(-50%);
+  font-size: 0.6rem; line-height: 1; pointer-events: none;
+}
+.form-champs-legend {
+  font-size: 0.65rem; color: var(--text-muted); margin-top: 10px;
+  display: flex; gap: 12px; flex-wrap: wrap;
+}
+.form-champs-legend span { display: flex; align-items: center; gap: 3px; }
+
 /* WR badge variants */
 .wr-badge {
   display: inline-block; font-size: 0.6rem; font-weight: 800;

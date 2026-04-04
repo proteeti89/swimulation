@@ -32,8 +32,8 @@
 
 <div class="controls">
   <div class="gender-toggle">
-    <button class="gender-btn active" data-gender="M" onclick="setGender('M')">Men</button>
-    <button class="gender-btn" data-gender="W" onclick="setGender('W')">Women</button>
+    <button class="gender-btn" data-gender="M" onclick="setGender('M')">Men</button>
+    <button class="gender-btn active" data-gender="W" onclick="setGender('W')">Women</button>
   </div>
   <div class="category-tabs" id="catTabs">
     <button class="cat-tab active" data-cat="Freestyle"    onclick="setCat('Freestyle')">Freestyle</button>
@@ -102,6 +102,20 @@
 <div class="footer">
   Model v2: 65% SB / 35% PB · age curve · championship multiplier · event-specific variance · H2H history blending · Monte Carlo (300 runs).<br>
   Data: World Aquatics, USA Swimming, TYR Pro Swim Series through 2025. For analytical and entertainment purposes only.
+</div>
+
+<!-- ── Athlete Profile Modal ──────────────────────────────────────────── -->
+<div class="modal-overlay" id="profileModal" onclick="closeProfile()">
+  <div class="modal-box" onclick="event.stopPropagation()">
+    <div class="modal-header">
+      <div>
+        <div class="modal-athlete-name" id="profileName"></div>
+        <div class="modal-athlete-meta" id="profileMeta"></div>
+      </div>
+      <button class="modal-close" onclick="closeProfile()">✕</button>
+    </div>
+    <div class="modal-body" id="profileContent"></div>
+  </div>
 </div>
 
 <script src="js/data/events.js"></script>

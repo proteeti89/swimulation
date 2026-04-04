@@ -2,7 +2,7 @@
 'use strict';
 
 const state = {
-  gender: 'M',
+  gender: 'W',
   cat:    'Freestyle',
   dist:   100,
   comp:   'World Aquatics Championships',
