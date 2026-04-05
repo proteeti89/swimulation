@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swimulation — My Predictions</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/predictions.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">
+    <div class="logo-icon">🌊</div>
+    <div class="logo-text">
+      <h1>Swimulation</h1>
+      <p>International Swimming Results Predictor</p>
+    </div>
+  </div>
+  <div class="header-right">
+    <nav class="page-nav">
+      <a class="page-nav-link" href="index.html">📊 Simulator</a>
+      <a class="page-nav-link active" href="predictions.html">🎯 My Predictions</a>
+    </nav>
+    <select class="comp-select" id="pCompSelect" onchange="pSetComp(this.value)">
+      <option value="World Aquatics Championships">🌍 World Aquatics Championships</option>
+      <option value="Olympic Games">🥇 Olympic Games</option>
+      <option value="Pan Pacific Championships">🏊 Pan Pacific Championships</option>
+      <option value="European Aquatics Championships">🇪🇺 European Aquatics Championships</option>
+      <option value="Commonwealth Games">🏴 Commonwealth Games</option>
+      <option value="US Nationals">🇺🇸 US Nationals</option>
+      <option value="TYR Pro Swim Series">🏅 TYR Pro Swim Series</option>
+    </select>
+  </div>
+</div>
+
+<div class="controls">
+  <div class="gender-toggle">
+    <button class="gender-btn" data-gender="M" onclick="pSetGender('M')">Men</button>
+    <button class="gender-btn active" data-gender="W" onclick="pSetGender('W')">Women</button>
+  </div>
+  <div class="category-tabs" id="pCatTabs">
+    <button class="cat-tab active" data-cat="Freestyle"    onclick="pSetCat('Freestyle')">Freestyle</button>
+    <button class="cat-tab"        data-cat="Backstroke"   onclick="pSetCat('Backstroke')">Backstroke</button>
+    <button class="cat-tab"        data-cat="Breaststroke" onclick="pSetCat('Breaststroke')">Breaststroke</button>
+    <button class="cat-tab"        data-cat="Butterfly"    onclick="pSetCat('Butterfly')">Butterfly</button>
+    <button class="cat-tab"        data-cat="IM"           onclick="pSetCat('IM')">Ind. Medley</button>
+  </div>
+  <div class="dist-btns" id="pDistBtns"></div>
+</div>
+
+<!-- Mode Tabs -->
+<div class="mode-tabs-bar">
+  <button class="mode-tab active" data-mode="pick"  onclick="switchMode('pick')">🎯 Make a Pick</button>
+  <button class="mode-tab"        data-mode="saved" onclick="switchMode('saved')">📋 Saved Picks</button>
+</div>
+
+<div class="pred-main">
+
+  <!-- ── Pick Panel ────────────────────────────────────────────────────── -->
+  <div id="pickPanel">
+    <div class="pick-card animate-in">
+      <div class="pick-card-header">
+        <div>
+          <div class="event-title" id="pickEventTitle">Women's 100m Freestyle</div>
+          <div class="event-subtitle" id="pickEventComp">World Aquatics Championships</div>
+        </div>
+        <div class="pick-header-right">
+          <span class="save-status" id="saveStatus">Unsaved</span>
+          <button class="save-btn" id="saveBtn" onclick="savePick()">💾 Save My Picks</button>
+        </div>
+      </div>
+
+      <div class="pick-instructions">
+        <span class="instr-icon">☝️</span>
+        Drag athletes into the order you think they'll finish. Your top 8 positions are saved.
+      </div>
+
+      <ul class="pick-list" id="pickList">
+        <!-- populated by JS -->
+      </ul>
+
+      <div class="pick-card-footer">
+        <span class="pick-footer-note">Picks are saved per competition &amp; event. Switch meets or strokes to make multiple predictions.</span>
+      </div>
+    </div>
+
+    <div class="how-it-works animate-in">
+      <div class="section-title">How Scoring Works</div>
+      <div class="scoring-grid">
+        <div class="scoring-item exact">
+          <div class="scoring-pts">3 pts</div>
+          <div class="scoring-label">Exact position</div>
+        </div>
+        <div class="scoring-item close">
+          <div class="scoring-pts">1 pt</div>
+          <div class="scoring-label">Off by one spot</div>
+        </div>
+        <div class="scoring-item miss">
+          <div class="scoring-pts">0 pts</div>
+          <div class="scoring-label">Off by two or more</div>
+        </div>
+        <div class="scoring-item bonus">
+          <div class="scoring-pts">+2 / +1</div>
+          <div class="scoring-label">Gold / Silver &amp; Bronze bonus</div>
+        </div>
+      </div>
+      <p class="scoring-note">
+        Enter actual results in the Saved Picks tab after the meet concludes
+        to see your score. Up to 8 positions are scored per event.
+      </p>
+    </div>
+  </div>
+
+  <!-- ── Saved Panel ───────────────────────────────────────────────────── -->
+  <div id="savedPanel" style="display:none">
+    <div class="saved-header animate-in">
+      <div class="event-title">Your Saved Predictions</div>
+      <p style="color:var(--text-muted);font-size:0.85rem;margin-top:4px">
+        Enter actual results after a meet to score each prediction.
+      </p>
+    </div>
+    <div id="savedList">
+      <!-- populated by JS -->
+    </div>
+  </div>
+
+</div><!-- /pred-main -->
+
+<div class="footer">
+  Predictions are stored locally in your browser. Data: World Aquatics, USA Swimming through 2025.
+  For analytical and entertainment purposes only.
+</div>
+
+<script src="js/data/events.js"></script>
+<script src="js/predictions.js"></script>
+</body>
+</html>

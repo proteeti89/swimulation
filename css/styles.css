@@ -58,6 +58,20 @@ body {
 }
 .comp-select:focus { border-color: var(--teal); }
 
+/* ─── Page Nav (Simulator ↔ Predictions) ──────────────────────────────────── */
+.page-nav {
+  display: flex; gap: 4px; align-items: center;
+  background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 8px; padding: 3px;
+}
+.page-nav-link {
+  padding: 6px 14px; border-radius: 6px;
+  font-size: 0.8rem; font-weight: 600;
+  text-decoration: none; color: var(--text-muted); transition: all 0.2s; white-space: nowrap;
+}
+.page-nav-link:hover { color: var(--text); background: rgba(255,255,255,0.05); }
+.page-nav-link.active { background: var(--teal); color: #fff; }
+
 /* ─── Controls ───────────────────────────────────────────────────────────────── */
 .controls {
   padding: 16px 24px;
