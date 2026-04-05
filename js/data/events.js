@@ -1,6 +1,37 @@
 /* ─── Events Config ─────────────────────────────────────────────────────────── */
 'use strict';
 
+/* ─── Competition eligibility ────────────────────────────────────────────────
+ * Maps each competition to the set of eligible country codes.
+ * null = all countries eligible (open international meet).
+ *
+ * Pan Pacific Championships  — Asia-Pacific + North America only (PRSO members)
+ * European Championships     — European nations only (LEN members)
+ * Commonwealth Games         — Commonwealth nations only
+ * US Nationals               — USA only
+ * World Aquatics / Olympics / TYR Pro Swim — open to all
+ */
+const COMP_ELIGIBILITY = {
+  'World Aquatics Championships':     null,
+  'Olympic Games':                    null,
+  'TYR Pro Swim Series':              null,
+  'Pan Pacific Championships': new Set([
+    'USA','AUS','CAN','JPN','CHN','KOR','NZL','HKG','MEX',
+    'TPE','MAS','SIN','INA','THA','PHI','GUM','SAM','FIJ',
+  ]),
+  'European Aquatics Championships': new Set([
+    'GBR','FRA','GER','ITA','SUI','SWE','NED','HUN','BEL','DEN',
+    'GRE','POL','IRL','MDA','SRB','ESP','ISR','UKR','ANA','NOR',
+    'AUT','ROU','ROM','LTU','POR','SVK','CZE','BLR','LAT','EST',
+    'FIN','LUX','MON','SLO','CRO','BUL','TUR','RUS',
+  ]),
+  'Commonwealth Games': new Set([
+    'GBR','AUS','CAN','NZL','HKG','IND','RSA','JAM','NGR','MAS',
+    'SIN','BAR','BAH','CYP','MLT','SCO','WAL','ENG','NAM','GHA',
+  ]),
+  'US Nationals': new Set(['USA']),
+};
+
 const EVENTS = {
   Freestyle:   [50, 100, 200, 400, 800, 1500],
   Backstroke:  [100, 200],
@@ -37,12 +68,12 @@ const WORLD_RECORDS = {
   'M-Free-1500':  { time: 871.02, holder: 'Sun Yang',           year: 2012 },
   // 51.60 — Thomas Ceccon (ITA), Budapest 2022
   'M-Back-100':   { time: 51.60,  holder: 'Thomas Ceccon',      year: 2022 },
-  // 1:53.27 — Evgeny Rylov (ROC), Tokyo Olympics 2021
-  'M-Back-200':   { time: 113.27, holder: 'Evgeny Rylov',       year: 2021 },
+  // 1:53.12 — Hubert Kos (HUN), Paris Olympics 2024
+  'M-Back-200':   { time: 113.12, holder: 'Hubert Kos',         year: 2024 },
   // 56.88 — Adam Peaty (GBR), Gwangju 2019
   'M-Breast-100': { time: 56.88,  holder: 'Adam Peaty',         year: 2019 },
-  // 2:05.95 — Zac Stubblety-Cook (AUS), Budapest 2022
-  'M-Breast-200': { time: 125.95, holder: 'Zac Stubblety-Cook', year: 2022 },
+  // 2:05.48 — Qin Haiyang (CHN), Fukuoka 2023
+  'M-Breast-200': { time: 125.48, holder: 'Qin Haiyang',        year: 2023 },
   // 49.45 — Caeleb Dressel (USA), Tokyo Olympics 2021
   'M-Fly-100':    { time: 49.45,  holder: 'Caeleb Dressel',     year: 2021 },
   // 1:50.34 — Kristóf Milák (HUN), Budapest 2022

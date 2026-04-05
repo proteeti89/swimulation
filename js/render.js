@@ -60,7 +60,11 @@ function renderLeaderboard(state) {
   const { gender, cat, dist, comp, isChampionship, seed } = state;
   const key = `${gender}-${CAT_ABBR[cat]}-${dist}`;
   const allAthletes = (ATHLETES[key] || []).slice();
-  const athletes = allAthletes.filter(a => a.active !== false);
+  // Filter by competition eligibility (null = all countries allowed)
+  const eligible = (typeof COMP_ELIGIBILITY !== 'undefined') ? COMP_ELIGIBILITY[comp] : null;
+  const athletes = allAthletes.filter(a =>
+    a.active !== false && (!eligible || eligible.has(a.country))
+  );
 
   if (!athletes.length) {
     document.getElementById('leaderboardBody').innerHTML =
@@ -127,8 +131,10 @@ function renderLeaderboard(state) {
     tbody.appendChild(tr);
   });
 
-  // Retired athletes row (collapsed)
-  const retired = allAthletes.filter(a => a.active === false);
+  // Retired athletes row (collapsed) — respect eligibility filter
+  const retired = allAthletes.filter(a =>
+    a.active === false && (!eligible || eligible.has(a.country))
+  );
   if (retired.length) {
     const tr = document.createElement('tr');
     tr.className = 'retired-row';
@@ -141,8 +147,9 @@ function renderLeaderboard(state) {
 
   const gLabel = gender === 'M' ? "Men's" : "Women's";
   const champsNote = isChampionship ? ' (championship adjustments active)' : '';
+  const eligNote  = eligible ? ` · ${athletes.length} eligible nations` : '';
   document.getElementById('eventTitle').textContent = `${gLabel} ${dist}m ${cat === 'IM' ? 'Individual Medley' : cat}`;
-  document.getElementById('eventSubtitle').textContent = `${comp} — Predicted Results${champsNote}`;
+  document.getElementById('eventSubtitle').textContent = `${comp} — Predicted Results${champsNote}${eligNote}`;
 
   return sorted;
 }
@@ -242,7 +249,11 @@ function renderH2H() {
   if (!gender) return;
 
   const key = `${gender}-${CAT_ABBR[cat]}-${dist}`;
-  const athletes = (ATHLETES[key] || []).filter(a => a.active !== false);
+  const _comp2    = (window._appState || {}).comp || '';
+  const _elig2    = (typeof COMP_ELIGIBILITY !== 'undefined') ? COMP_ELIGIBILITY[_comp2] : null;
+  const athletes = (ATHLETES[key] || []).filter(a =>
+    a.active !== false && (!_elig2 || _elig2.has(a.country))
+  );
   const a1 = athletes.find(a => a.name === sel1.value);
   const a2 = athletes.find(a => a.name === sel2.value);
 
